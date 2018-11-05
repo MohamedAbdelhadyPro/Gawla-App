@@ -4,4 +4,13 @@
     <string name="title_activity_splash_">Splash_Activity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="tit1">جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج ,
+        انضم الان </string>
+    <string name="tit2">اختار دولتك</string>
+    <string name="egypt">مصر</string>
+    <string name="kuwait">الكويت</string>
+    <string name="google_plus">سجل عبر جوجل بلس</string>
+    <string name="facebook">سجل عبر فيسبوك</string>
+    <string name="email">البريد اللإلكتروني</string>
+    <string name="login">دخول</string>
 </resources>
