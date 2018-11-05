@@ -14,4 +14,7 @@
     <color name="btn_facebook_end">#3b5998</color>
     <color name="ccc">#f4f7fa</color>
     <color name="edittext_hint">#9498b9</color>
+    <color name="btn_login_end">#3e69d2</color>
+    <color name="btn_login_start">#2196ee</color>
+    <color name="create_account_text">#2267c6</color>
 </resources>
