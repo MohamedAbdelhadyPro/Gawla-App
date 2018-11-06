@@ -6,93 +6,131 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".NavigationFragments.HalesFragment">
 
-    <!-- main layout -->
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+        <!-- main layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <!-- logo -->
-        <ImageView
-            android:id="@+id/hales_logo"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/gawla_logo" />
+            <!-- logo -->
+            <ImageView
+                android:id="@+id/hales_logo"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/gawla_logo" />
 
-        <!-- bell -->
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_margin="20dp"
-            android:src="@mipmap/ic_launcher" />
+            <!-- bell -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:src="@mipmap/ic_launcher" />
 
-        <!-- 1st card -->
-        <android.support.v7.widget.CardView
-            android:id="@+id/hales_1st_card"
-            android:layout_below="@id/hales_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="130dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="10dp">
+            <!-- 1st card -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/hales_1st_card"
+                android:layout_below="@id/hales_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:background="@drawable/bg_blue_rounded_corners">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitXY"
-                    android:src="@mipmap/flodIllus" />
-
-                <!-- texts -->
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/bg_blue_rounded_corners">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                    <ImageView
+                        android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="تعرف علي المزيد من تطبيق الجولة"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/flodilllus" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                    <!-- texts -->
+                    <LinearLayout
+                        android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="مساحة اعلانات عن الجولات المميزة"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="تعرف علي المزيد من تطبيق الجولة"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="مساحة اعلانات عن الجولات المميزة"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
                 </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- orange area 'with no need' -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/bg_orange_rounded_bottom_corners"
+                android:layout_below="@id/hales_1st_card"/>
+
+            <!-- recent hales header -->
+            <LinearLayout
+                android:layout_below="@id/hales_1st_card"
+                android:layout_margin="33dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="شاهد الكل"
+                    android:textColor="@color/midBlue"
+                    android:textSize="18sp"
+                    android:gravity="end"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الصالات الحالية"
+                    android:textSize="18sp"
+                    android:gravity="start"/>
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recent_hales_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <!-- orange area 'with no need' -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginEnd="45dp"
-            android:background="@drawable/bg_orange_rounded_bottom_corners"
-            android:layout_below="@id/hales_1st_card"/>
+            </android.support.v7.widget.RecyclerView>
 
-    </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
 </FrameLayout>

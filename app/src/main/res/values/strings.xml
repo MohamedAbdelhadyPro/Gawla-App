@@ -15,4 +15,9 @@
     <string name="login">دخول</string>
     <string name="forgetPassword">نسيت كلمة السر ؟</string>
     <string name="create_account">إنشاء حساب</string>
+    <string name="hales">hales</string>
+    <string name="my_rounds">my rounds</string>
+    <string name="cards">cards</string>
+    <string name="account">accounts</string>
+    <string name="menu">menu</string>
 </resources>
