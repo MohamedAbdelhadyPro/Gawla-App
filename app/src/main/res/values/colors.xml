@@ -19,11 +19,10 @@
     <color name="btn_login_start">#2196ee</color>
     <color name="create_account_text">#2267c6</color>
 
-<<<<<<< HEAD
+
     <color name="mohamed">#ccc</color>
-=======
+
     <color name="colorOrange">#eab422</color>
     <color name="colorBgDarkBlue">#23479c</color>
-
->>>>>>> 0ebc71681ccf363203e2e9a4290b83513fff9da6
+    <color name="memo">#ccc</color>
 </resources>
