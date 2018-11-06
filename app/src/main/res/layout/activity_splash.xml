@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash"
-    tools:context=".Splash_Activity">
+    tools:context=".SplashActivites.Splash_Activity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -61,12 +61,13 @@
                 android:padding="10dp">
 
                 <LinearLayout
+                    android:id="@+id/btn_kuwait"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_splash2"
                     android:orientation="vertical"
@@ -95,12 +96,13 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btn_egypt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_splash2"
                     android:orientation="vertical"

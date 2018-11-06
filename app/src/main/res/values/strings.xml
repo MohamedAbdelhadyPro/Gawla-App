@@ -24,4 +24,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="slide_heading1">اشترك الان</string>
+    <string name="slide_heading2">انضم للجولة</string>
+    <string name="slide_heading3">قدم افضل سعر</string>
+    <string name="slide_descs1">قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة </string>
+    <string name="slide_descs2">قم باختيار الصاله المفضلة و انضم اليها ثم قم بمراقبة وقت المزايدة</string>
+    <string name="slide_descs3">قدم افضل سعر مناسب للشراء داخل الصالة لربح الجوله</string>
 </resources>

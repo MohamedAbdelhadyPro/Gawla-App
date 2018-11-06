@@ -17,17 +17,13 @@
     <color name="btn_login_end">#3e69d2</color>
     <color name="btn_login_start">#2196ee</color>
     <color name="create_account_text">#2267c6</color>
-    <color name="mohamed">#ccc</color>
     <color name="colorOrange">#eab422</color>
     <color name="bgBlueLight">#468ae7</color>
     <color name="bgBlueDark">#23479c</color>
     <color name="darkSkyBlue">#4a90e2</color>
     <color name="blueyGrey">#b0bac5</color>
     <color name="midBlue">#2066c6</color>
-
-<<<<<<< HEAD
-    <color name="mahmoud">#008855</color>
-=======
-    <color name="mero">#ccc</color>
->>>>>>> 8c9a913c2b51353e3d721cab2d2a411b47380ec7
+    <color name="babyBlue">#a0d5ff</color>
+    <color name="dots">#19326d</color>
+    <color name="ops">#00000000</color>
 </resources>
