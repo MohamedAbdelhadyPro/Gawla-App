@@ -13,6 +13,6 @@
     <string name="facebook">سجل عبر فيسبوك</string>
     <string name="email">البريد اللإلكتروني</string>
     <string name="login">دخول</string>
-    <string name="forgetpassword">نسيت كلمة السر ؟</string>
+    <string name="forgetPassword">نسيت كلمة السر ؟</string>
     <string name="create_account">إنشاء حساب</string>
 </resources>

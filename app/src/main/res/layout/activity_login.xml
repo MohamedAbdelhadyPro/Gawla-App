@@ -147,7 +147,7 @@
                 android:fontFamily="@font/cairo_regular"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="@string/forgetpassword" />
+                android:text="@string/forgetPassword" />
 
             <TextView
                 android:id="@+id/textView8"
