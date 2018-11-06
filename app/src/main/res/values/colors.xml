@@ -3,6 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#468ae7</color>
+
     <color name="bg_Splash_Start">#468ae7</color>
     <color name="bg_Splash_End">#23479c</color>
     <color name="bg_Splash_country">#1f3e81</color>
@@ -17,4 +18,6 @@
     <color name="btn_login_end">#3e69d2</color>
     <color name="btn_login_start">#2196ee</color>
     <color name="create_account_text">#2267c6</color>
+
+
 </resources>
