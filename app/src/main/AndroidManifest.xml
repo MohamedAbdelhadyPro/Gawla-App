@@ -9,33 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".Splash_Activity"/>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ForgetPasswordActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivites.Splash_Activity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity">
-=======
-        <activity android:name=".SplashActivites.Splash_Activity" >
->>>>>>> 041f55e9d7b2cdbbfd40d6d63202b447c03b90a8
+        <activity android:name=".SplashActivites.onboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-=======
-        <activity android:name=".LoginActivity">
+        <activity android:name=".CreateAccountActivity"></activity>
+        <activity android:name=".SubscribePlanActivity">
 
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" />
-        <activity android:name=".SplashActivites.onboardActivity">
-
-        </activity>
->>>>>>> 041f55e9d7b2cdbbfd40d6d63202b447c03b90a8
     </application>
 
 </manifest>

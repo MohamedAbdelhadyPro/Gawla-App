@@ -4,10 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/cairo_regular</item>
-<<<<<<< HEAD
         <item name="android:includeFontPadding">false</item>
-=======
->>>>>>> 041f55e9d7b2cdbbfd40d6d63202b447c03b90a8
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

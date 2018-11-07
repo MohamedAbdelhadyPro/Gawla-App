@@ -75,8 +75,8 @@
 
                     <ImageView
                         android:id="@+id/imageView5"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/flag_kuwait" />
@@ -110,8 +110,8 @@
 
                     <ImageView
                         android:id="@+id/imageView7"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/flag_egypt" />
