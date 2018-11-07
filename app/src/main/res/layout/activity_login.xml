@@ -102,7 +102,7 @@
                 android:paddingTop="10dp"
                 android:paddingRight="30dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/edittext_hint" />
+                android:textColorHint="@color/editText_hint" />
 
             <EditText
                 android:id="@+id/editText2"
@@ -120,7 +120,7 @@
                 android:paddingTop="10dp"
                 android:paddingRight="30dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/edittext_hint" />
+                android:textColorHint="@color/editText_hint" />
 
             <Button
                 android:id="@+id/button3"
