@@ -18,10 +18,23 @@
     <string name="cards">cards</string>
     <string name="account">account</string>
     <string name="menu">menu</string>
+<<<<<<< HEAD
     <string name="sell_price">sell price</string>
     <string name="round_start">round start</string>
     <string name="close">close</string>
     <string name="join_round">join round</string>
     <string name="see_all">see all</string>
     <string name="recent_hales">recent hales</string>
+=======
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="slide_heading1">اشترك الان</string>
+    <string name="slide_heading2">انضم للجولة</string>
+    <string name="slide_heading3">قدم افضل سعر</string>
+    <string name="slide_descs1">قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة </string>
+    <string name="slide_descs2">قم باختيار الصاله المفضلة و انضم اليها ثم قم بمراقبة وقت المزايدة</string>
+    <string name="slide_descs3">قدم افضل سعر مناسب للشراء داخل الصالة لربح الجوله</string>
+>>>>>>> 041f55e9d7b2cdbbfd40d6d63202b447c03b90a8
 </resources>
