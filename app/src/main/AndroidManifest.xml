@@ -12,20 +12,18 @@
         <activity android:name=".LoginActivities.LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivities.SplashActivity">
-
-        </activity>
-        <activity android:name=".SplashActivities.onBoardActivity" />
-        <activity android:name=".LoginActivities.CreateAccountActivity" />
-        <activity android:name=".SubscribePlanActivity" />
-        <activity android:name=".PaymentActivity" />
-        <activity android:name=".LoginActivities.ForgetPasswordActivity" />
-        <activity android:name=".HaleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SplashActivities.onBoardActivity" />
+        <activity android:name=".LoginActivities.CreateAccountActivity" />
+        <activity android:name=".SubscribePlanActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".LoginActivities.ForgetPasswordActivity" />
+        <activity android:name=".HaleActivity"/>
     </application>
 
 </manifest>
