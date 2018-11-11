@@ -35,35 +35,52 @@
                 tools:layout_editor_absoluteX="154dp"
                 tools:layout_editor_absoluteY="39dp" />
 
-            <Button
-                android:id="@+id/button"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/btn_google_plus"
-                android:fontFamily="@font/cairo_bold"
-                android:gravity="center"
-                android:text="@string/google_plus"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:gravity="center">
 
-            <Button
-                android:id="@+id/button2"
+                <TextView
+                    android:id="@+id/button"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_google_plus"
+                    android:drawableLeft="@drawable/gicon"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:text="@string/google_plus"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/btn_facebook"
-                android:fontFamily="@font/cairo_bold"
-                android:gravity="center"
-                android:text="@string/facebook"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/button2"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_facebook"
+                    android:drawableLeft="@drawable/page1"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:text="@string/facebook"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
