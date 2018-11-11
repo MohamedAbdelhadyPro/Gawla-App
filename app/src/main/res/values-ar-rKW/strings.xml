@@ -12,4 +12,26 @@
     <string name="my_rounds">جولاتي</string>
     <string name="hales">الصالات</string>
     <string name="recent_hales">الصالات الحالية</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="slide_heading1">اشترك الان</string>
+    <string name="slide_heading2">انضم للجولة</string>
+    <string name="slide_heading3">قدم افضل سعر</string>
+    <string name="slide_descs1">قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة </string>
+    <string name="slide_descs2">قم باختيار الصاله المفضلة و انضم اليها ثم قم بمراقبة وقت المزايدة</string>
+    <string name="slide_descs3">قدم افضل سعر مناسب للشراء داخل الصالة لربح الجوله</string>
+    <string name="title_activity_splash_">Splash_Activity</string>
+    <string name="tit1">جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج ,
+        انضم الان </string>
+    <string name="tit2">اختار دولتك</string>
+    <string name="egypt">مصر</string>
+    <string name="kuwait">الكويت</string>
+    <string name="google_plus">سجل عبر جوجل بلس</string>
+    <string name="facebook">سجل عبر فيسبوك</string>
+    <string name="email">البريد اللإلكتروني</string>
+    <string name="login">دخول</string>
+    <string name="forgetPassword">نسيت كلمة السر ؟</string>
+    <string name="create_account">إنشاء حساب</string>
 </resources>

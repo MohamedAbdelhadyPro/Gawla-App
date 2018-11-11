@@ -34,7 +34,6 @@ public class onBoardActivity extends AppCompatActivity {
 
         txtback = findViewById(R.id.txt_back);
         txtnext = findViewById(R.id.txt_next);
-
         mViewPager = findViewById(R.id.slideViewPager);
         mDotLayout = findViewById(R.id.dots);
         SliderAdapter sliderAdapter = new SliderAdapter(onBoardActivity.this);
@@ -103,6 +102,9 @@ public class onBoardActivity extends AppCompatActivity {
         if (mDots.length > 0){
             mDots[position].setTextColor(getResources().getColor(R.color.babyBlue));
         }
+    }
+    public void finishscrean(){
+        finish();
     }
 
 }
