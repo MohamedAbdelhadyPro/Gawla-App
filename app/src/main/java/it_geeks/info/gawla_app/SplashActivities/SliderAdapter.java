@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import it_geeks.info.gawla_app.LoginActivity;
+import it_geeks.info.gawla_app.LoginActivities.LoginActivity;
 import it_geeks.info.gawla_app.R;
 
 public class SliderAdapter extends PagerAdapter {
@@ -20,7 +20,7 @@ public class SliderAdapter extends PagerAdapter {
     public int[] slide_Images ;
     String[] slide_headings , slide_descs;
     TextView txt_Splat_Skip;
-    onboardActivity onboardActivity = new onboardActivity();
+    onBoardActivity onboardActivity = new onBoardActivity();
 
     public SliderAdapter(Context context) {
         this.context = context;
