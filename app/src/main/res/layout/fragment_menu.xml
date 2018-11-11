@@ -3,11 +3,274 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/paleGrey"
     tools:context=".NavigationFragments.HalesFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="menu" />
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <!-- main layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- logo, bell & country container -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp">
+
+                <!-- logo -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/gawla_logo_blue" />
+
+                <!-- bell -->
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_bell" />
+
+                <!-- country -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/flag_egypt" />
+
+            </RelativeLayout>
+
+            <!-- title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج , انضم الان حقيبة الكروت"
+                android:textColor="@color/blueGrey"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- top border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/paleGrey" />
+
+            <!-- 1st option -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp">
+
+                <!-- label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/card_icon_1st"
+                    android:text="المزيد عن الجولة"
+                    android:textColor="@color/darkSkyBlue"
+                    android:textSize="18sp" />
+
+                <!-- icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <!-- separator -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginStart="22dp"
+                android:background="@color/paleGrey" />
+
+            <!-- 2nd option -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp">
+
+                <!-- label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/card_icon_1st"
+                    android:text="سياسة الخصوصية"
+                    android:textColor="@color/darkSkyBlue"
+                    android:textSize="18sp" />
+
+                <!-- icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <!-- separator -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginStart="22dp"
+                android:background="@color/paleGrey" />
+
+            <!-- 3rd option -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp">
+
+                <!-- label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/card_icon_1st"
+                    android:text="الشروط والأحكام"
+                    android:textColor="@color/darkSkyBlue"
+                    android:textSize="18sp" />
+
+                <!-- icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <!-- bottom border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/paleGrey" />
+
+            <!-- top border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/paleGrey" />
+
+            <!-- 4th option -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp">
+
+                <!-- label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/card_icon_1st"
+                    android:text="اتصل بنا"
+                    android:textColor="@color/darkSkyBlue"
+                    android:textSize="18sp" />
+
+                <!-- icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <!-- bottom border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/paleGrey" />
+
+            <!-- top border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/paleGrey" />
+
+            <!-- 5th option -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp">
+
+                <!-- label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/card_icon_1st"
+                    android:text="كيف تعمل الجولة"
+                    android:textColor="@color/darkSkyBlue"
+                    android:textSize="18sp" />
+
+                <!-- icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <!-- bottom border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/paleGrey" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

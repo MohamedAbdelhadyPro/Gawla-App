@@ -1,4 +1,4 @@
-package it_geeks.info.gawla_app.SplashActivites;
+package it_geeks.info.gawla_app.SplashActivities;
 
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 import it_geeks.info.gawla_app.LoginActivity;
 import it_geeks.info.gawla_app.R;
 
-public class onboardActivity extends AppCompatActivity {
+public class onBoardActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private LinearLayout mDotLayout;
@@ -25,7 +25,7 @@ public class onboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //----------------full screan-----------------//
+        //----------------full screen-----------------//
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -37,7 +37,7 @@ public class onboardActivity extends AppCompatActivity {
 
         mViewPager = findViewById(R.id.slideViewPager);
         mDotLayout = findViewById(R.id.dots);
-        SliderAdapter sliderAdapter = new SliderAdapter(onboardActivity.this);
+        SliderAdapter sliderAdapter = new SliderAdapter(onBoardActivity.this);
         mViewPager.setAdapter(sliderAdapter);
 
         addDots(0);
@@ -75,7 +75,7 @@ public class onboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (mCurrentPage >= 2){
-                startActivity(new Intent(onboardActivity.this,LoginActivity.class));
+                startActivity(new Intent(onBoardActivity.this,LoginActivity.class));
                 finish();
             }
                 mViewPager.setCurrentItem(mCurrentPage + 1);

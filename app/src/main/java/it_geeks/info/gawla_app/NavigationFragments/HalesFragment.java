@@ -12,37 +12,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 import it_geeks.info.gawla_app.Adapters.RecentHalesAdapter;
+import it_geeks.info.gawla_app.Adapters.WinnersNewsAdapter;
 import it_geeks.info.gawla_app.Models.Round;
+import it_geeks.info.gawla_app.Models.WinnerNews;
 import it_geeks.info.gawla_app.R;
 
 public class HalesFragment extends Fragment {
 
     private RecyclerView recentHalesRecycler;
+    private RecyclerView winnersNewsRecycler;
     private RecentHalesAdapter recentHalesAdapter;
+    private WinnersNewsAdapter winnersNewsAdapter;
 
     private List<Round> roundsList = new ArrayList<>();
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    private List<WinnerNews> winnerNewsList = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hales, container, false);
 
-        getRoundsData();
+        getData();
 
-        initRecycler(view);
+        initHalesRecycler(view);
+
+        initWinnersRecycler(view);
 
         return view;
     }
 
-    private void getRoundsData() {
+    private void getData() {
         // fake data
         for (int i = 0; i < 5; i++) {
-            Round r  = new Round("samsung A" + i + " 201" + i
+            Round round  = new Round("samsung A" + i + " 201" + i
                     , "image" + i
                     , "Electronics"
                     , i + "0000 L.E"
@@ -50,15 +52,29 @@ public class HalesFragment extends Fragment {
                     , "8 hr 40 min"
                     , "2" + i + " member joined");
 
-            roundsList.add(r);
+            roundsList.add(round);
+
+            WinnerNews winnerNews = new WinnerNews("title " + i
+                    , "body " + i
+                    , "not yet");
+
+            winnerNewsList.add(winnerNews);
         }
     }
 
-    private void initRecycler(View view) {
+    private void initHalesRecycler(View view) {
         recentHalesRecycler = view.findViewById(R.id.recent_hales_recycler);
         recentHalesRecycler.setHasFixedSize(true);
         recentHalesRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), 0,false));
         recentHalesAdapter = new RecentHalesAdapter(getActivity(), roundsList);
         recentHalesRecycler.setAdapter(recentHalesAdapter);
+    }
+
+    private void initWinnersRecycler(View view) {
+        winnersNewsRecycler = view.findViewById(R.id.winners_news_recycler);
+        winnersNewsRecycler.setHasFixedSize(true);
+        winnersNewsRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), 1,false));
+        winnersNewsAdapter = new WinnersNewsAdapter(getActivity(), winnerNewsList);
+        winnersNewsRecycler.setAdapter(winnersNewsAdapter);
     }
 }

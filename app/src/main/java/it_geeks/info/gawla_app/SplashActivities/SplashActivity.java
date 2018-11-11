@@ -1,4 +1,4 @@
-package it_geeks.info.gawla_app.SplashActivites;
+package it_geeks.info.gawla_app.SplashActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import it_geeks.info.gawla_app.R;
 
 
-public class Splash_Activity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
     private LinearLayout btn_kuwait,btn_egypt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +25,13 @@ public class Splash_Activity extends AppCompatActivity {
         btn_kuwait.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Splash_Activity.this,onboardActivity.class));
+                startActivity(new Intent(SplashActivity.this,onBoardActivity.class));
             }
         });
         btn_egypt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Splash_Activity.this,onboardActivity.class));
+                startActivity(new Intent(SplashActivity.this,onBoardActivity.class));
             }
         });
 

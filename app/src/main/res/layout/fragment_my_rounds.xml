@@ -3,11 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavigationFragments.HalesFragment">
+    android:background="@color/paleGrey"
+    tools:context=".NavigationFragments.MyRoundsFragment">
 
-    <TextView
+    <!-- main layout -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="my rounds" />
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- logo & bell container -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp">
+
+            <!-- logo -->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/gawla_logo_blue" />
+
+            <!-- bell -->
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_bell" />
+
+        </RelativeLayout>
+
+        <!-- title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="الصالات المشترك بها"
+            android:textColor="@color/midBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- rounds -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/rounds_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
 </FrameLayout>

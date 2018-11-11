@@ -1,13 +1,286 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavigationFragments.HalesFragment">
+    android:background="@color/paleGrey"
+    tools:context=".NavigationFragments.CardsFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="cards" />
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <!-- main layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- logo & bell container -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- logo -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/gawla_logo_blue" />
+
+                <!-- bell -->
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_bell" />
+
+            </RelativeLayout>
+
+            <!-- title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="حقيبة الكروت"
+                android:textColor="@color/midBlue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- green card container -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+                <!-- card view main layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- texts -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- status -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="knfkf"
+                            android:textColor="@color/battleshipGrey"
+                            android:textSize="18sp" />
+
+                        <!-- description -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="يمكنك شراء الكارت الاخضر من اعادة فتح  الجولة لمدة ١٥ دقيقة "
+                            android:textColor="@color/blueyGrey"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- card container -->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <!-- green card icon -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_circle_grey"
+                            android:padding="20dp"
+                            android:src="@drawable/card_green" />
+
+                        <!-- counter -->
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/bg_circle_red"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- red card container -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+                <!-- card view main layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- texts -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- status -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="knfkf"
+                            android:textColor="@color/battleshipGrey"
+                            android:textSize="18sp" />
+
+                        <!-- description -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="يمكنك شراء الكارت الاخضر من اعادة فتح  الجولة لمدة ١٥ دقيقة "
+                            android:textColor="@color/blueyGrey"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- card container -->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <!-- card icon -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_circle_grey"
+                            android:padding="20dp"
+                            android:src="@drawable/card_red" />
+
+                        <!-- counter -->
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/bg_circle_red"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- yellow card container -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+                <!-- card view main layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- texts -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- status -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="knfkf"
+                            android:textColor="@color/battleshipGrey"
+                            android:textSize="18sp" />
+
+                        <!-- description -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="يمكنك شراء الكارت الاخضر من اعادة فتح  الجولة لمدة ١٥ دقيقة "
+                            android:textColor="@color/blueyGrey"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <!-- card container -->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <!-- card icon -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_circle_grey"
+                            android:padding="20dp"
+                            android:src="@drawable/card_yellow" />
+
+                        <!-- counter -->
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/bg_circle_red"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

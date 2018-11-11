@@ -1,4 +1,4 @@
-package it_geeks.info.gawla_app.SplashActivites;
+package it_geeks.info.gawla_app.SplashActivities;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

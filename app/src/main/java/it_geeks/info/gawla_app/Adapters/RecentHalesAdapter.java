@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import it_geeks.info.gawla_app.Models.Round;
@@ -20,7 +19,7 @@ import it_geeks.info.gawla_app.R;
 public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.ViewHolder> {
 
     private Context context;
-    private List<Round> roundsList = new ArrayList<>();
+    private List<Round> roundsList;
 
     public RecentHalesAdapter(Context context, List<Round> roundsList) {
         this.context = context;
