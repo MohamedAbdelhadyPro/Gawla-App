@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -20,7 +21,8 @@ import it_geeks.info.gawla_app.Models.RoundUpdate;
 public class HaleActivity extends AppCompatActivity {
     int joined = 0;
     Button btnJoineRound,btnJoineRound2,btnJoineRound3;
-    RelativeLayout rDivPro1,rDivPro2,rDivPro3,rDivPro4,shadowalert,shadowalert2;
+    RelativeLayout rDivPro1,rDivPro2,rDivPro3,rDivPro4;
+    LinearLayout shadowalert,shadowalert2;
     TextView txtReadMore;
     RecyclerView rProdList;
     @Override
@@ -115,6 +117,7 @@ public class HaleActivity extends AppCompatActivity {
             btnJoineRound.setVisibility(View.VISIBLE);
             shadowalert.setVisibility(View.GONE);
             shadowalert.setVisibility(View.GONE);
+            super.onBackPressed();
         }else if(joined == 1){
             rDivPro1.setVisibility(View.VISIBLE);
             rDivPro2.setVisibility(View.VISIBLE);

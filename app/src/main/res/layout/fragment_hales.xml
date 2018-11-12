@@ -50,9 +50,9 @@
                 android:id="@+id/hales_1st_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="3dp">
                 <!-- card view main layout -->
@@ -117,7 +117,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="33dp">
+                android:layout_margin="15dp">
 
                 <!-- btn see all -->
                 <TextView
@@ -151,7 +151,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="33dp"
+                android:layout_margin="15dp"
                 android:gravity="end"
                 android:text="@string/winners_of_hale_news"
                 android:textSize="18sp" />

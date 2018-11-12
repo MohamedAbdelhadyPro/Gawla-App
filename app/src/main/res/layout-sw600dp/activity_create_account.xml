@@ -159,6 +159,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/login_shape"
                 android:fontFamily="@font/cairo_bold"
                 android:gravity="center"

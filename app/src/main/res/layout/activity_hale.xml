@@ -20,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -84,7 +84,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="2dp"
                     android:background="@drawable/bg_rounded_corners_white"
                     app:cardCornerRadius="8dp">
 
@@ -153,22 +153,26 @@
                                 <RelativeLayout
                                     android:layout_width="35dp"
                                     android:layout_height="45dp"
-                                    android:layout_alignParentStart="true"
-                                    android:layout_alignParentTop="true"
                                     android:layout_marginStart="5dp"
-                                    android:background="@drawable/timeshape"
-                                    android:gravity="center">
+                                    android:background="@drawable/timeshape">
 
                                     <TextView
                                         android:id="@+id/textView32"
                                         android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
                                         android:fontFamily="@font/cairo_bold"
+                                        android:gravity="center"
                                         android:text="0"
                                         android:textColor="@android:color/white"
                                         android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView47"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/time_ops" />
 
                                 </RelativeLayout>
 
@@ -182,12 +186,18 @@
                                     android:gravity="center">
 
                                     <TextView
+                                        android:id="@+id/textView51"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/time_ops" />
+
+                                    <TextView
                                         android:id="@+id/textView45"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
                                         android:fontFamily="@font/cairo_bold"
+                                        android:gravity="center"
                                         android:text="6"
                                         android:textColor="@android:color/white"
                                         android:textSize="25sp" />
@@ -212,12 +222,18 @@
                                     android:gravity="center">
 
                                     <TextView
+                                        android:id="@+id/textView52"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/time_ops" />
+
+                                    <TextView
                                         android:id="@+id/textView33"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
                                         android:fontFamily="@font/cairo_bold"
+                                        android:gravity="center"
                                         android:text="3"
                                         android:textColor="@android:color/white"
                                         android:textSize="25sp" />
@@ -234,12 +250,18 @@
                                     android:gravity="center">
 
                                     <TextView
+                                        android:id="@+id/textView54"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/time_ops" />
+
+                                    <TextView
                                         android:id="@+id/textView34"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
                                         android:fontFamily="@font/cairo_bold"
+                                        android:gravity="center"
                                         android:text="2"
                                         android:textColor="@android:color/white"
                                         android:textSize="25sp" />
@@ -264,12 +286,18 @@
                                     android:gravity="center">
 
                                     <TextView
+                                        android:id="@+id/textView56"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/time_ops" />
+
+                                    <TextView
                                         android:id="@+id/textView35"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
                                         android:fontFamily="@font/cairo_bold"
+                                        android:gravity="center"
                                         android:text="4"
                                         android:textColor="@android:color/white"
                                         android:textSize="25sp" />
@@ -289,12 +317,18 @@
                                         android:id="@+id/textView36"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
                                         android:fontFamily="@font/cairo_bold"
+                                        android:gravity="center"
                                         android:text="0"
                                         android:textColor="@android:color/white"
                                         android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/textView57"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/time_ops" />
 
                                 </RelativeLayout>
 
@@ -459,15 +493,17 @@
                             android:layout_marginRight="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@drawable/edittext_shape"
+                            android:drawableLeft="@drawable/scroll_icon"
                             android:drawableRight="@drawable/ic_members"
                             android:ems="10"
                             android:fontFamily="@font/cairo_regular"
                             android:gravity="right"
                             android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:paddingRight="20dp"
                             android:paddingBottom="10dp"
-                            android:text="15 عضو انضمو للجولة "
+                            android:text="    15  عضو انضمو للجولة "
                             android:textColor="@color/battleshipGrey"
                             android:textColorHint="@color/editText_hint" />
 
@@ -582,23 +618,6 @@
                 </android.support.v7.widget.CardView>
             </RelativeLayout>
 
-            <Button
-                android:id="@+id/btnJoineRound"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/login_shape"
-                android:fontFamily="@font/cairo_bold"
-                android:gravity="center"
-                android:text="انضم للجولة"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
             <RelativeLayout
                 android:id="@+id/divPro4"
                 android:layout_width="match_parent"
@@ -615,12 +634,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/edittext_shape"
+                        android:background="@drawable/edittext_shape_add"
                         android:ems="10"
                         android:fontFamily="@font/cairo_regular"
                         android:gravity="center"
@@ -657,11 +676,13 @@
         </LinearLayout>
     </ScrollView>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/shadowalert"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="@color/black_overlay"
+        android:gravity="bottom"
+        android:orientation="vertical"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -671,16 +692,13 @@
         <RelativeLayout
             android:id="@+id/divPro5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="300dp">
+            android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginBottom="5dp"
                 android:background="@drawable/bg_rounded_corners_white"
                 app:cardCornerRadius="8dp">
 
@@ -723,7 +741,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="40dp"
                         android:gravity="center"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
@@ -739,27 +757,26 @@
             android:id="@+id/btnJoineRound2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/divPro5"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/login_shape"
             android:fontFamily="@font/cairo_bold"
-            android:gravity="center"
             android:text="انضم للجولة"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
-    </RelativeLayout>
 
-    <RelativeLayout
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/shadowalert2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="@color/black_overlay"
+        android:gravity="bottom"
+        android:orientation="vertical"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -769,16 +786,13 @@
         <RelativeLayout
             android:id="@+id/divPro6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="295dp">
+            android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginBottom="5dp"
                 android:background="@drawable/bg_rounded_corners_white"
                 app:cardCornerRadius="8dp">
 
@@ -837,11 +851,9 @@
             android:id="@+id/btnJoineRound3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/divPro6"
-            android:layout_alignParentBottom="true"
             android:layout_gravity="center"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/joined_play_shape"
@@ -851,6 +863,26 @@
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
-    </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnJoineRound"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_shape"
+        android:fontFamily="@font/cairo_bold"
+        android:gravity="center"
+        android:text="انضم للجولة"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
