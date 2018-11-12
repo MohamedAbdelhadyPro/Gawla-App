@@ -20,7 +20,7 @@ public class SliderAdapter extends PagerAdapter {
     public int[] slide_Images ;
     String[] slide_headings , slide_descs;
     TextView txt_Splat_Skip;
-    onboardActivity onboardActivity = new onboardActivity();
+    onBoardActivity onboardActivity = new onBoardActivity();
 
     public SliderAdapter(Context context) {
         this.context = context;

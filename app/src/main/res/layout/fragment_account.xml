@@ -45,8 +45,8 @@
 
                         <!-- logo -->
                         <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="100dp"
+                            android:layout_width="140dp"
+                            android:layout_height="80dp"
                             android:layout_centerInParent="true"
                             android:src="@drawable/gawla_logo_blue" />
 
@@ -65,14 +65,22 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp">
 
-                        <!-- image -->
+                        <!-- just a placeholder for icon -->
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:layout_margin="4dp"
-                            android:background="@drawable/bg_circle_pale_grey"
-                            android:padding="45dp"
-                            android:src="@drawable/ic_user" />
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_user"
+                            android:background="@drawable/bg_circle_bordered_pale_grey2" />
+
+                        <!-- image -->
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="4dp"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/blueyGrey"/>
 
                         <!-- btn edit -->
                         <ImageView

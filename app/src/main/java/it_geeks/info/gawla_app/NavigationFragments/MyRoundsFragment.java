@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +19,9 @@ public class MyRoundsFragment extends Fragment {
 
     private ViewPager roundsViewPager;
     private RoundsPagerAdapter roundsAdapter;
-
     private List<Round> roundsList = new ArrayList<>();
+
+    private LinearLayout emptyViewLayout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +31,8 @@ public class MyRoundsFragment extends Fragment {
         getData();
 
         initPager(view);
+
+        initEmptyView(view);
 
         return view;
     }
@@ -52,6 +56,18 @@ public class MyRoundsFragment extends Fragment {
         roundsViewPager = view.findViewById(R.id.rounds_pager);
         roundsAdapter = new RoundsPagerAdapter(getActivity(), roundsList);
         roundsViewPager.setAdapter(roundsAdapter);
+    }
+
+    private void initEmptyView(View view) {
+        emptyViewLayout = view.findViewById(R.id.my_rounds_empty_view);
+
+        if (roundsList.size() > 0) {
+            emptyViewLayout.setVisibility(View.INVISIBLE);
+            roundsViewPager.setVisibility(View.VISIBLE);
+        } else {
+            emptyViewLayout.setVisibility(View.VISIBLE);
+            roundsViewPager.setVisibility(View.INVISIBLE);
+        }
     }
 
 }

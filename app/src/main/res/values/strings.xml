@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Gawla</string>
 
-    <string name="title_activity_splash_">Splash_Activity</string>
     <string name="tit1">جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج ,
         انضم الان </string>
     <string name="tit2">اختار دولتك</string>
@@ -10,48 +9,29 @@
     <string name="google_plus">سجل عبر جوجل بلس</string>
     <string name="facebook">سجل عبر فيسبوك</string>
     <string name="email">البريد اللإلكتروني</string>
-    <string name="password">كلمة السر</string>
     <string name="login">دخول</string>
     <string name="forgetPassword">نسيت كلمة السر ؟</string>
     <string name="create_account">إنشاء حساب</string>
-    <string name="hales">hales</string>
-    <string name="my_rounds">my rounds</string>
-    <string name="cards">cards</string>
-    <string name="account">account</string>
-    <string name="menu">menu</string>
-<<<<<<< HEAD
-
-=======
->>>>>>> f036a845cbb37b249c9809898447fa447afc85e1
-    <string name="sell_price">sell price</string>
-    <string name="round_start">round start</string>
-    <string name="close">close</string>
-    <string name="join_round">join round</string>
-    <string name="see_all">see all</string>
-    <string name="recent_hales">recent hales</string>
-<<<<<<< HEAD
-
-=======
->>>>>>> f036a845cbb37b249c9809898447fa447afc85e1
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="slide_heading1">اشترك الان</string>
     <string name="slide_heading2">انضم للجولة</string>
     <string name="slide_heading3">قدم افضل سعر</string>
     <string name="slide_descs1">قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة </string>
     <string name="slide_descs2">قم باختيار الصاله المفضلة و انضم اليها ثم قم بمراقبة وقت المزايدة</string>
     <string name="slide_descs3">قدم افضل سعر مناسب للشراء داخل الصالة لربح الجوله</string>
-<<<<<<< HEAD
     <string name="winners_of_hale_news">winners of hale news</string>
     <string name="add_offer">add offer</string>
 
-=======
-    <string name="send">ارسل</string>
-    <string name="full_name">الاسم بالكامل</string>
-    <string name="create_new_account">انشاء حساب جديد</string>
-    <string name="have_already_account">لدي حساب بالفعل</string>
-    <string name="pay_later">دفع لاحقاً</string>
->>>>>>> f036a845cbb37b249c9809898447fa447afc85e1
+    <string name="hales">hales</string>
+    <string name="my_rounds">my rounds</string>
+    <string name="cards">cards</string>
+    <string name="account">account</string>
+    <string name="menu">menu</string>
+    <string name="sell_price">sell price</string>
+    <string name="round_start">round start</string>
+    <string name="close">close</string>
+    <string name="join_round">join round</string>
+    <string name="see_all">see all</string>
+    <string name="recent_hales">recent hales</string>
+    <string name="password">password</string>
+
 </resources>
