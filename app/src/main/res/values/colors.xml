@@ -17,6 +17,7 @@
     <color name="btn_login_end">#3e69d2</color>
     <color name="btn_login_start">#2196ee</color>
     <color name="create_account_text">#2267c6</color>
+<<<<<<< HEAD
     <color name="bg_mumbership_nurmal_start">#70c7ff</color>
     <color name="bg_mumbership_nurmal_end">#46a2e7</color>
     <color name="bg_mumbership_vip_start">#ffdb76</color>
@@ -26,6 +27,11 @@
     <color name="dots">#19326d</color>
     <color name="ops">#00000000</color>
 
+=======
+    <color name="babyBlue">#a0d5ff</color>
+    <color name="dots">#19326d</color>
+    <color name="ops">#00000000</color>
+>>>>>>> fb1c8c48569c1f7f5520862cacf1f6ec119efcac
     <color name="colorOrange">#eab422</color>
     <color name="bgBlueLight">#468ae7</color>
     <color name="bgBlueDark">#23479c</color>
@@ -43,5 +49,16 @@
     <color name="cornflowerBlue">#3e69d2</color>
     <color name="azure">#2196ee</color>
     <color name="duskBlue">#223e81</color>
+<<<<<<< HEAD
 
+=======
+    <color name="bg_mumbership_nurmal_start">#70c7ff</color>
+    <color name="bg_mumbership_nurmal_end">#46a2e7</color>
+    <color name="bg_mumbership_vip_start">#ffdb76</color>
+    <color name="bg_mumbership_vip_end">#eab422</color>
+    <color name="muddyBrown">#86620d</color>
+    <color name="azureTwo">#24aaf6</color>
+    <color name="greenblue">#21b594</color>
+    <color name="paleGreyTwo">#dfe6ee</color>
+>>>>>>> fb1c8c48569c1f7f5520862cacf1f6ec119efcac
 </resources>

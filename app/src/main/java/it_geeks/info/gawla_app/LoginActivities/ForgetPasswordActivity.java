@@ -1,7 +1,9 @@
-package it_geeks.info.gawla_app;
+package it_geeks.info.gawla_app.LoginActivities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import it_geeks.info.gawla_app.R;
 
 public class ForgetPasswordActivity extends AppCompatActivity {
 

@@ -32,6 +32,26 @@
     <string name="join_round">join round</string>
     <string name="see_all">see all</string>
     <string name="recent_hales">recent hales</string>
+<<<<<<< HEAD
     <string name="password">password</string>
 
+=======
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="slide_heading1">اشترك الان</string>
+    <string name="slide_heading2">انضم للجولة</string>
+    <string name="slide_heading3">قدم افضل سعر</string>
+    <string name="slide_descs1">قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة </string>
+    <string name="slide_descs2">قم باختيار الصاله المفضلة و انضم اليها ثم قم بمراقبة وقت المزايدة</string>
+    <string name="slide_descs3">قدم افضل سعر مناسب للشراء داخل الصالة لربح الجوله</string>
+    <string name="winners_of_hale_news">winners of hale news</string>
+    <string name="add_offer">add offer</string>
+    <string name="send">ارسل</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="have_already_account">لدي حساب بالفعل</string>
+    <string name="pay_later">دفع لاحقاً</string>
+>>>>>>> fb1c8c48569c1f7f5520862cacf1f6ec119efcac
 </resources>

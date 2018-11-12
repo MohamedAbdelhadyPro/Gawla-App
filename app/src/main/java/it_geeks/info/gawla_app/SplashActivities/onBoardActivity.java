@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import it_geeks.info.gawla_app.LoginActivity;
+import it_geeks.info.gawla_app.LoginActivities.LoginActivity;
 import it_geeks.info.gawla_app.R;
 
 public class onBoardActivity extends AppCompatActivity {

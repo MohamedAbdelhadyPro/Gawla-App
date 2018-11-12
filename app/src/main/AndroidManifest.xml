@@ -9,15 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivities.SplashActivity" />
         <activity android:name=".MainActivity">
+=======
+        <activity android:name=".LoginActivities.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivities.SplashActivity">
+
+        </activity>
+        <activity android:name=".SplashActivities.onBoardActivity" />
+        <activity android:name=".LoginActivities.CreateAccountActivity" />
+        <activity android:name=".SubscribePlanActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".LoginActivities.ForgetPasswordActivity" />
+        <activity android:name=".HaleActivity">
+>>>>>>> fb1c8c48569c1f7f5520862cacf1f6ec119efcac
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".SplashActivities.onBoardActivity" />
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".SubscribePlanActivity" />
@@ -25,6 +40,8 @@
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".RoundUpdatesActivity"/>
 
+=======
+>>>>>>> fb1c8c48569c1f7f5520862cacf1f6ec119efcac
     </application>
 
 </manifest>
