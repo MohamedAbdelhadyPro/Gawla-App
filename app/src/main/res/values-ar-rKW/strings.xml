@@ -34,4 +34,12 @@
     <string name="login">دخول</string>
     <string name="forgetPassword">نسيت كلمة السر ؟</string>
     <string name="create_account">إنشاء حساب</string>
+    <string name="password">كلمة السر</string>
+    <string name="send">ارسل</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="have_already_account">لدي حساب بالفعل</string>
+    <string name="pay_later">دفع لاحقاً</string>
+    <string name="activate_card">تفعيل الكارت</string>
+    <string name="buy_card">شراء الكارت</string>
 </resources>

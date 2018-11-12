@@ -36,8 +36,7 @@ public class RoundsPagerAdapter extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.item_my_round, container, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_my_round, container, false);
 
         //
 

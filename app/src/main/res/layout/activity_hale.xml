@@ -450,7 +450,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/TextView45"
+                            android:id="@+id/hales_open_round_updates"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_gravity="center"

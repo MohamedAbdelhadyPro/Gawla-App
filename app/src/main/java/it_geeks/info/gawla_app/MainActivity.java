@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        changeStatusBarColor("#f4f7fa");// for startup
         displayFragment(fragment);
 
         initNavigation();

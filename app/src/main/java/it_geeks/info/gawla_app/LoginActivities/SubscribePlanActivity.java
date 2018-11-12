@@ -1,4 +1,4 @@
-package it_geeks.info.gawla_app;
+package it_geeks.info.gawla_app.LoginActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.TextView;
+
+import it_geeks.info.gawla_app.MainActivity;
+import it_geeks.info.gawla_app.R;
 
 public class SubscribePlanActivity extends AppCompatActivity {
     TextView txt_pay_later;

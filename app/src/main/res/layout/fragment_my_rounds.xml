@@ -24,8 +24,8 @@
 
             <!-- logo -->
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
                 android:layout_centerInParent="true"
                 android:src="@drawable/gawla_logo_blue" />
 
@@ -51,16 +51,52 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <!-- rounds -->
-        <android.support.v4.view.ViewPager
-            android:id="@+id/rounds_pager"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
             android:layout_marginTop="20dp"
-            android:layout_weight="1" />
+            android:layout_weight="1">
 
+            <!-- rounds -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/rounds_pager"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp" />
+
+            <!-- empty view -->
+            <LinearLayout
+                android:id="@+id/my_rounds_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/empty_view_my_rounds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text="قم الانضمام الي  احد الصالات
+لديك فرصه واحده للمشاركة كل يوم"
+                    android:textColor="@color/blueGrey"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
     </LinearLayout>
 
 </FrameLayout>
