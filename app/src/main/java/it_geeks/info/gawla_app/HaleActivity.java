@@ -91,6 +91,7 @@ public class HaleActivity extends AppCompatActivity {
                 BottomSheetDialog Dialog = new BottomSheetDialog(HaleActivity.this);
                 Dialog.setContentView(vv);
                 Dialog.show();
+                
             }
         });
     }
