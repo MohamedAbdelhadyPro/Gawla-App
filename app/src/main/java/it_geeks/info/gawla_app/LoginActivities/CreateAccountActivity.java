@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import it_geeks.info.gawla_app.R;
-import it_geeks.info.gawla_app.SubscribePlanActivity;
 
 public class CreateAccountActivity extends AppCompatActivity {
     TextView txtHaveAccount;

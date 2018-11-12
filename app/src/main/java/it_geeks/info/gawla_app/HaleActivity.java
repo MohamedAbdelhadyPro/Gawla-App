@@ -2,6 +2,7 @@ package it_geeks.info.gawla_app;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import it_geeks.info.gawla_app.Adapters.ProductImageAdapter;
+import it_geeks.info.gawla_app.Models.RoundUpdate;
 
 public class HaleActivity extends AppCompatActivity {
     int joined = 0;
@@ -36,6 +38,14 @@ public class HaleActivity extends AppCompatActivity {
         shadowalert = findViewById(R.id.shadowalert);
         shadowalert2 = findViewById(R.id.shadowalert2);
         txtReadMore = findViewById(R.id.txtReadMore);
+
+        //open round updates activity
+        findViewById(R.id.hales_open_round_updates).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HaleActivity.this, RoundUpdatesActivity.class));
+            }
+        });
 
 
         btnJoineRound.setOnClickListener(new View.OnClickListener() {

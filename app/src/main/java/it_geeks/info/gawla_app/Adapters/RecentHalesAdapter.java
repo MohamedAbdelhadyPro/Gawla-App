@@ -1,6 +1,7 @@
 package it_geeks.info.gawla_app.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +14,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+import it_geeks.info.gawla_app.HaleActivity;
 import it_geeks.info.gawla_app.Models.Round;
 import it_geeks.info.gawla_app.R;
 
@@ -47,6 +50,13 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
         viewHolder.tvStartTime.setText(round.getStartTime());
         viewHolder.tvEndTime.setText(round.getEndTime());
         viewHolder.tvMembersNumber.setText(round.getJoinedMembersNumber());
+
+        viewHolder.btnJoinRound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, HaleActivity.class));
+            }
+        });
     }
 
     @Override
@@ -56,7 +66,7 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvProductName, tvProductCategory, tvProductPrice, tvStartTime, tvEndTime, tvMembersNumber;
+        TextView tvProductName, tvProductCategory, tvProductPrice, tvStartTime, tvEndTime, tvMembersNumber, btnJoinRound;
         ImageView imgProductImage;
 
         private ViewHolder(@NonNull View itemView) {
@@ -69,6 +79,7 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
             tvStartTime = itemView.findViewById(R.id.round_start_time);
             tvEndTime = itemView.findViewById(R.id.round_end_time);
             tvMembersNumber = itemView.findViewById(R.id.round_members_number);
+            btnJoinRound = itemView.findViewById(R.id.round_btn_join);
         }
     }
 }
