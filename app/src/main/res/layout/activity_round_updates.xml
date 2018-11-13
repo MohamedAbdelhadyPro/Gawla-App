@@ -109,8 +109,8 @@
 
                         <!-- icon -->
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
                             android:layout_margin="10dp"
                             android:background="@drawable/bg_circle_blue_270"
                             android:padding="20dp"
@@ -119,11 +119,10 @@
 
                         <!-- cards notification -->
                         <TextView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:background="@drawable/bg_circle_red"
                             android:gravity="center"
-                            android:padding="4dp"
                             android:text="2"
                             android:textColor="@android:color/white"
                             android:textSize="15sp"
