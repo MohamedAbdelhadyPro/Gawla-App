@@ -38,8 +38,8 @@
                 <ImageView
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
                     android:layout_marginEnd="4dp"
                     android:src="@drawable/ic_bell" />
 
@@ -51,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:text="حقيبة الكروت"
+                android:text="@string/cards_bag"
+                android:textAllCaps="true"
                 android:textColor="@color/midBlue"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -84,7 +85,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
-                            android:text="knfkf"
+                            android:text="@string/dont_have_green_card"
                             android:textColor="@color/battleshipGrey"
                             android:textSize="18sp" />
 
@@ -159,7 +160,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
-                            android:text="knfkf"
+                            android:text="@string/dont_have_red_card"
                             android:textColor="@color/battleshipGrey"
                             android:textSize="18sp" />
 
@@ -234,7 +235,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="4dp"
-                            android:text="knfkf"
+                            android:text="@string/dont_have_yellow_card"
                             android:textColor="@color/battleshipGrey"
                             android:textSize="18sp" />
 

@@ -12,19 +12,13 @@
     <string name="my_rounds">جولاتي</string>
     <string name="hales">الصالات</string>
     <string name="recent_hales">الصالات الحالية</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="slide_heading1">اشترك الان</string>
     <string name="slide_heading2">انضم للجولة</string>
     <string name="slide_heading3">قدم افضل سعر</string>
     <string name="slide_descs1">قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة </string>
     <string name="slide_descs2">قم باختيار الصاله المفضلة و انضم اليها ثم قم بمراقبة وقت المزايدة</string>
     <string name="slide_descs3">قدم افضل سعر مناسب للشراء داخل الصالة لربح الجوله</string>
-    <string name="title_activity_splash_">Splash_Activity</string>
-    <string name="tit1">جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج ,
-        انضم الان </string>
+    <string name="tit1e">"جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج ,         انضم الان "</string>
     <string name="tit2">اختار دولتك</string>
     <string name="egypt">مصر</string>
     <string name="kuwait">الكويت</string>
@@ -42,4 +36,22 @@
     <string name="pay_later">دفع لاحقاً</string>
     <string name="activate_card">تفعيل الكارت</string>
     <string name="buy_card">شراء الكارت</string>
+    <string name="cards_bag">حقيبة الكروت</string>
+    <string name="menu_fragment_title">جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج , انضم الان حقيبة الكروت</string>
+    <string name="more_about_gawla">المزيد عن الجولة</string>
+    <string name="terms_conditions">الشروط والأحكام</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="how_gawla_works">كيف تعمل الجولة</string>
+    <string name="zero_members_joined">0 عضو انضموا للجولة</string>
+    <string name="joined_hales">الصالات المشترك بها</string>
+    <string name="joined_hales_empty_hint">قم الانضمام الي  احد الصالات لديك فرصه واحده للمشاركة كل يوم</string>
+    <string name="dont_have_green_card">ليس لديك الكارت الاخضر</string>
+    <string name="dont_have_yellow_card">ليس لديك الكارت الزهبي</string>
+    <string name="dont_have_red_card">ليس لديك الكارت الاحمر</string>
+    <string name="privacy_policy">بيانات الخصوصية</string>
+    <string name="buying_processes">عمليات الشراء</string>
+    <string name="account_details">بيانات الحساب</string>
+    <string name="new_offer">عرض جديد</string>
+    <string name="add_offer">إضافة عرض</string>
+    <string name="winners_of_hale_news">اخبار رابحين  الصالة</string>
 </resources>

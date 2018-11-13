@@ -136,10 +136,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="بيانات الحساب"
-                        android:textColor="@color/darkSkyBlue"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/card_icon_1st"
+                        android:text="@string/account_details"
+                        android:textColor="@color/darkSkyBlue"
                         android:textSize="18sp" />
 
                     <!-- icon -->
@@ -181,7 +181,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="عمليات الشراء"
+                        android:text="@string/buying_processes"
                         android:textColor="@color/darkSkyBlue"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/card_icon_2st"
@@ -226,7 +226,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="بيانات الخصوصية"
+                        android:text="@string/privacy_policy"
                         android:textColor="@color/darkSkyBlue"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/card_icon_3st"

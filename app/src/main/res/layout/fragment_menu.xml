@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:text="جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج , انضم الان حقيبة الكروت"
+                android:text="@string/menu_fragment_title"
                 android:textColor="@color/blueGrey"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -88,7 +88,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/card_icon_1st"
-                    android:text="المزيد عن الجولة"
+                    android:text="@string/more_about_gawla"
                     android:textColor="@color/darkSkyBlue"
                     android:textSize="18sp" />
 
@@ -127,7 +127,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/card_icon_1st"
-                    android:text="سياسة الخصوصية"
+                    android:text="@string/privacy_policy"
                     android:textColor="@color/darkSkyBlue"
                     android:textSize="18sp" />
 
@@ -166,7 +166,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/card_icon_1st"
-                    android:text="الشروط والأحكام"
+                    android:text="@string/terms_conditions"
                     android:textColor="@color/darkSkyBlue"
                     android:textSize="18sp" />
 
@@ -210,7 +210,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/card_icon_1st"
-                    android:text="اتصل بنا"
+                    android:text="@string/call_us"
                     android:textColor="@color/darkSkyBlue"
                     android:textSize="18sp" />
 
@@ -254,7 +254,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/card_icon_1st"
-                    android:text="كيف تعمل الجولة"
+                    android:text="@string/how_gawla_works"
                     android:textColor="@color/darkSkyBlue"
                     android:textSize="18sp" />
 
