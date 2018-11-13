@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -26,7 +29,7 @@ public class HaleActivity extends AppCompatActivity {
     RelativeLayout rDivPro1,rDivPro2,rDivPro3,rDivPro4;
     LinearLayout shadowalert,shadowalert2;
     TextView txtReadMore;
-    RecyclerView rProdList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,42 +99,54 @@ public class HaleActivity extends AppCompatActivity {
         txtReadMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LayoutInflater layoutInflater = LayoutInflater.from(HaleActivity.this);
-                View vv = layoutInflater.inflate(R.layout.product_description_item,null);
-                rProdList = vv.findViewById(R.id.RecyProdList);
-                rProdList.setLayoutManager(new LinearLayoutManager(HaleActivity.this,LinearLayoutManager.HORIZONTAL,false));
-                ProductImageAdapter productImageAdapter = new ProductImageAdapter(HaleActivity.this);
-                rProdList.setAdapter(productImageAdapter);
-                BottomSheetDialog Dialog = new BottomSheetDialog(HaleActivity.this);
-                Dialog.setContentView(vv);
-
-                Dialog.setCanceledOnTouchOutside(false);
-
-                Dialog.show();
+                ProductDetailsFragment productDetailsFragment = new ProductDetailsFragment();
+                setFragment(productDetailsFragment);
             }
         });
     }
-
+    protected void setFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(android.R.id.content, fragment);
+        fragmentTransaction.commit();
+    }
     @Override
     public void onBackPressed() {
+
         if (joined == 0){
-            rDivPro1.setVisibility(View.VISIBLE);
-            rDivPro2.setVisibility(View.VISIBLE);
-            rDivPro3.setVisibility(View.GONE);
-            btnJoineRound.setVisibility(View.VISIBLE);
-            shadowalert.setVisibility(View.GONE);
-            shadowalert.setVisibility(View.GONE);
-            super.onBackPressed();
+          if(ProductDetailsFragment.xPro == 1){
+            ProductDetailsFragment.frameLayout.setVisibility(View.GONE);
+            ProductDetailsFragment.xPro = 0;
+              HaleActivity.this.getWindow().setStatusBarColor(getResources().getColor(R.color.paleGrey));
+          }else{
+              rDivPro1.setVisibility(View.VISIBLE);
+              rDivPro2.setVisibility(View.VISIBLE);
+              rDivPro3.setVisibility(View.GONE);
+              btnJoineRound.setVisibility(View.VISIBLE);
+              shadowalert.setVisibility(View.GONE);
+              shadowalert.setVisibility(View.GONE);
+              super.onBackPressed();
+          }
         }else if(joined == 1){
-            rDivPro1.setVisibility(View.VISIBLE);
-            rDivPro2.setVisibility(View.VISIBLE);
-            shadowalert2.setVisibility(View.GONE);
-            rDivPro3.setVisibility(View.GONE);
-            btnJoineRound.setVisibility(View.GONE);
-            rDivPro4.setVisibility(View.VISIBLE);
-            super.onBackPressed();
+            if(ProductDetailsFragment.xPro == 1){
+                ProductDetailsFragment.frameLayout.setVisibility(View.GONE);
+                ProductDetailsFragment.xPro = 0;
+                HaleActivity.this.getWindow().setStatusBarColor(getResources().getColor(R.color.paleGrey));
+            }else {
+                rDivPro1.setVisibility(View.VISIBLE);
+                rDivPro2.setVisibility(View.VISIBLE);
+                shadowalert2.setVisibility(View.GONE);
+                rDivPro3.setVisibility(View.GONE);
+                btnJoineRound.setVisibility(View.GONE);
+                rDivPro4.setVisibility(View.VISIBLE);
+                super.onBackPressed();
+            }
         }
+
+
     }
+
+
 
 
 }

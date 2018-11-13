@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pHale"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/paleGrey"
@@ -54,6 +54,18 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/hale_number"
+                    android:textColor="@color/battleshipGrey"
+                    android:textSize="18sp" />
+
+                <TextView
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -61,16 +73,6 @@
                     android:gravity="center"
                     android:text="234152"
                     android:textColor="@color/midBlue"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cairo_semibold"
-                    android:gravity="center"
-                    android:text="الصالة رقم : "
-                    android:textColor="@color/battleshipGrey"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -105,12 +107,12 @@
                             android:paddingBottom="5dp">
 
                             <TextView
-                                android:id="@+id/textView23"
+                                android:id="@+id/textView25"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="ساعة"
+                                android:text="@string/second"
                                 android:textColor="@color/duskBlue"
                                 android:textSize="16sp" />
 
@@ -120,17 +122,17 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="دقيقة"
+                                android:text="@string/Minute"
                                 android:textColor="@color/duskBlue"
                                 android:textSize="16sp" />
 
                             <TextView
-                                android:id="@+id/textView25"
+                                android:id="@+id/textView23"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="ثانية"
+                                android:text="@string/hour"
                                 android:textColor="@color/duskBlue"
                                 android:textSize="16sp" />
 
@@ -152,7 +154,7 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-                                    android:layout_height="45dp"
+                                    android:layout_height="50dp"
                                     android:layout_marginStart="5dp"
                                     android:background="@drawable/timeshape">
 
@@ -171,14 +173,14 @@
                                     <TextView
                                         android:id="@+id/textView47"
                                         android:layout_width="match_parent"
-                                        android:layout_height="25dp"
+                                        android:layout_height="26dp"
                                         android:background="@drawable/time_ops" />
 
                                 </RelativeLayout>
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-                                    android:layout_height="45dp"
+                                    android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
                                     android:layout_marginStart="5dp"
@@ -188,7 +190,7 @@
                                     <TextView
                                         android:id="@+id/textView51"
                                         android:layout_width="match_parent"
-                                        android:layout_height="25dp"
+                                        android:layout_height="26dp"
                                         android:background="@drawable/time_ops" />
 
                                     <TextView
@@ -214,7 +216,7 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-                                    android:layout_height="45dp"
+                                    android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
                                     android:layout_marginStart="5dp"
@@ -224,7 +226,7 @@
                                     <TextView
                                         android:id="@+id/textView52"
                                         android:layout_width="match_parent"
-                                        android:layout_height="25dp"
+                                        android:layout_height="26dp"
                                         android:background="@drawable/time_ops" />
 
                                     <TextView
@@ -242,7 +244,7 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-                                    android:layout_height="45dp"
+                                    android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
                                     android:layout_marginStart="5dp"
@@ -252,7 +254,7 @@
                                     <TextView
                                         android:id="@+id/textView54"
                                         android:layout_width="match_parent"
-                                        android:layout_height="25dp"
+                                        android:layout_height="26dp"
                                         android:background="@drawable/time_ops" />
 
                                     <TextView
@@ -278,7 +280,7 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-                                    android:layout_height="45dp"
+                                    android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
                                     android:layout_marginStart="5dp"
@@ -288,7 +290,7 @@
                                     <TextView
                                         android:id="@+id/textView56"
                                         android:layout_width="match_parent"
-                                        android:layout_height="25dp"
+                                        android:layout_height="26dp"
                                         android:background="@drawable/time_ops" />
 
                                     <TextView
@@ -306,7 +308,7 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-                                    android:layout_height="45dp"
+                                    android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
                                     android:layout_marginStart="5dp"
@@ -327,7 +329,7 @@
                                     <TextView
                                         android:id="@+id/textView57"
                                         android:layout_width="match_parent"
-                                        android:layout_height="25dp"
+                                        android:layout_height="26dp"
                                         android:background="@drawable/time_ops" />
 
                                 </RelativeLayout>
@@ -344,25 +346,29 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/textView38"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/cairo_semibold"
-                                android:gravity="right|center"
-                                android:text="6:24 PM"
-                                android:textColor="@color/paleRed"
-                                android:textSize="16sp" />
-
-                            <TextView
                                 android:id="@+id/textView37"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="15dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:fontFamily="@font/cairo_semibold"
+                                android:gravity="center|start"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:text="@string/Discount_the_tour"
+                                android:textColor="@color/blueGrey"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/cairo_semibold"
                                 android:gravity="center"
-                                android:text="حسم الجولة    "
-                                android:textColor="@color/blueGrey"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:text="6:24 PM"
+                                android:textColor="@color/paleRed"
                                 android:textSize="16sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -390,6 +396,15 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/macbook" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -413,24 +428,35 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView40"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:fontFamily="@font/cairo_bold"
-                                    android:gravity="right"
-                                    android:text="5,599.00 جنيه"
-                                    android:textColor="@color/azureTwo"
-                                    android:textSize="16sp" />
-
-                                <TextView
                                     android:id="@+id/textView41"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="5dp"
                                     android:layout_marginRight="5dp"
                                     android:layout_weight="1"
-                                    android:text="سعر البيع:"
+                                    android:text="@string/Prod_price"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/cairo_bold"
+                                    android:gravity="center"
+                                    android:text="5,599.00 "
+                                    android:textColor="@color/azureTwo"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/textView21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/cairo_bold"
+                                    android:gravity="center"
+                                    android:text="@string/money"
+                                    android:textColor="@color/azureTwo"
                                     android:textSize="16sp" />
                             </LinearLayout>
 
@@ -438,24 +464,16 @@
                                 android:id="@+id/txtReadMore"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="right"
+                                android:layout_gravity="end"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
                                 android:fontFamily="@font/cairo_semibold"
                                 android:gravity="bottom"
-                                android:text="اقراد المزيد"
+                                android:padding="5dp"
+                                android:text="@string/read_more"
                                 android:textColor="@color/midBlue" />
 
                         </LinearLayout>
-
-                        <ImageView
-                            android:id="@+id/imageView6"
-                            android:layout_width="80dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/macbook" />
 
                     </LinearLayout>
 
@@ -497,13 +515,14 @@
                             android:drawableRight="@drawable/ic_members"
                             android:ems="10"
                             android:fontFamily="@font/cairo_regular"
-                            android:gravity="right"
+                            android:gravity="start"
                             android:inputType="textPersonName"
+                            android:paddingStart="15dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:paddingRight="20dp"
+                            android:paddingEnd="15dp"
                             android:paddingBottom="10dp"
-                            android:text="    15  عضو انضمو للجولة "
+                            android:text="@string/mumber_joined_round"
                             android:textColor="@color/battleshipGrey"
                             android:textColorHint="@color/editText_hint" />
 
@@ -513,6 +532,13 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_account" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -520,32 +546,26 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView53"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="right"
-                                    android:layout_weight="2"
-                                    android:gravity="right"
-                                    android:text=" سالم الدوثري"
-                                    android:textColor="@color/midBlue" />
-
-                                <TextView
                                     android:id="@+id/textView44"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="right"
                                     android:gravity="left"
-                                    android:text="انضم للصالة العضو "
+                                    android:text="@string/joine_Round"
                                     android:textColor="@color/blueGrey" />
+
+                                <TextView
+                                    android:id="@+id/textView53"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text=" سالم الدوثري"
+                                    android:textColor="@color/midBlue" />
 
                             </LinearLayout>
 
-                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                                android:id="@+id/profile_image"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_margin="5dp"
-                                android:src="@drawable/ic_account" />
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -876,7 +896,7 @@
         android:background="@drawable/login_shape"
         android:fontFamily="@font/cairo_bold"
         android:gravity="center"
-        android:text="انضم للجولة"
+        android:text="@string/join_round"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"

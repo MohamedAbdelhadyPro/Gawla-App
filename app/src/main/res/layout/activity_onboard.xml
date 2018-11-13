@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/cairo_semibold"
-            android:gravity="center_vertical|end"
+            android:gravity="center_vertical|center"
             android:includeFontPadding="false"
             android:padding="10dp"
             android:textColor="@android:color/white"
@@ -44,10 +44,10 @@
         <!-- dots -->
         <LinearLayout
             android:id="@+id/dots"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_horizontal"
+            android:gravity="fill_vertical|center"
             android:orientation="horizontal" />
 
         <!-- btn next -->
@@ -57,10 +57,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/cairo_semibold"
-            android:gravity="center_vertical|start"
+            android:gravity="center_vertical|center"
             android:includeFontPadding="false"
             android:padding="10dp"
-            android:text="التالي"
+            android:text="@string/next"
             android:textColor="@android:color/white"
             android:textSize="17sp" />
 
