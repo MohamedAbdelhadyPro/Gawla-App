@@ -50,9 +50,9 @@
                 android:id="@+id/hales_1st_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="3dp">
                 <!-- card view main layout -->
@@ -63,10 +63,13 @@
                     android:gravity="center">
 
                     <ImageView
+<<<<<<< HEAD
                         android:layout_width="0dp"
+=======
+                        android:layout_width="200dp"
+>>>>>>> c1c30303adca7728dafa5de89636eaf3578d29a5
                         android:layout_height="match_parent"
                         android:layout_gravity="left"
-                        android:layout_weight="1"
                         android:scaleType="fitXY"
                         android:src="@drawable/flodillus" />
 
@@ -117,7 +120,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="33dp">
+                android:layout_margin="25dp">
 
                 <!-- header -->
                 <TextView
@@ -126,7 +129,7 @@
                     android:layout_weight="1"
                     android:gravity="start"
                     android:text="@string/recent_hales"
-                    android:textSize="18sp" />
+                    android:textSize="20sp" />
 
                 <!-- btn see all -->
                 <TextView
@@ -152,10 +155,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="33dp"
+                android:layout_margin="25dp"
                 android:gravity="start"
                 android:text="@string/winners_of_hale_news"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
             <!-- winners news recycler -->
             <android.support.v7.widget.RecyclerView
