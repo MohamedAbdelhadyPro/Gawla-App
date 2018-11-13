@@ -63,7 +63,7 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="0dp"
+                        android:layout_width=""
                         android:layout_height="match_parent"
                         android:layout_gravity="left"
                         android:layout_weight="1"
@@ -119,22 +119,23 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="33dp">
 
-                <!-- btn see all -->
+                <!-- header -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="start"
-                    android:text="@string/see_all"
-                    android:textColor="@color/midBlue"
+                    android:text="@string/recent_hales"
                     android:textSize="18sp" />
 
+                <!-- btn see all -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    android:text="@string/recent_hales"
+                    android:text="@string/see_all"
+                    android:textColor="@color/midBlue"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -152,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="33dp"
-                android:gravity="end"
+                android:gravity="start"
                 android:text="@string/winners_of_hale_news"
                 android:textSize="18sp" />
 
