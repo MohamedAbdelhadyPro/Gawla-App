@@ -4,7 +4,9 @@ package it_geeks.info.gawla_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -102,8 +104,10 @@ public class HaleActivity extends AppCompatActivity {
                 rProdList.setAdapter(productImageAdapter);
                 BottomSheetDialog Dialog = new BottomSheetDialog(HaleActivity.this);
                 Dialog.setContentView(vv);
+
+                Dialog.setCanceledOnTouchOutside(false);
+
                 Dialog.show();
-                
             }
         });
     }
