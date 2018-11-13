@@ -8,8 +8,6 @@
     <path
         android:name="dark_triangle"
         android:fillColor="#e34d4d"
-        android:pathData="M 100,0 L 0,100 100,100 z" />
-
-
-
+        android:pathData="M 100,0 L 0,100 100,100 z"
+       />
 </vector>

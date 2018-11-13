@@ -8,12 +8,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView28"
@@ -34,10 +35,10 @@
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/RecyProdList"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scrollbars="horizontal"
-                android:layout_gravity="center"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scrollbars="none" />
 
             <TextView
                 android:id="@+id/textView30"
@@ -51,6 +52,15 @@
                 android:textColor="@color/duskBlue"
                 android:textSize="18sp" />
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/paleGreyTwo">
+
+            </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,16 +70,35 @@
                     android:id="@+id/textView31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:text="5,599.00 جنيه" />
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="5,599.00 جنيه"
+                    android:textColor="@color/azureTwo"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView42"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="سعر البيع:" />
+                    android:fontFamily="@font/cairo_semibold"
+                    android:paddingRight="5dp"
+                    android:text="سعر البيع :"
+                    android:textSize="18sp" />
             </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/paleGreyTwo">
+
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -80,13 +109,23 @@
                     android:id="@+id/textView43"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="الوصف:" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:text="الوصف:"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView46"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="يو إس بيUSB 2.0 &amp; 3.0 حجم الشاشة (انش)15.6 Inch العلامة التجارية لمتحكم الفيديوAMD العلامة التجاريةايسر المعالج: A8-7410 ( 2 ميجا كاش، 2.2 جيجاهرتز) الذاكرة: 4 جيجابايت DDR3L القرص الصلب: 1 تيرابايت بطاقة رسومات: مشترك - مدمج الشاشة: 15.6 بوصة اتش دي دقة (1366 x 768) المحرك الضوئي: ناسخ دي في دي المنافذ: 1x يو اس بي 3.0, 2x يو اس بي 2.0, شبكة (RJ-45), مخرج اتش دي ام اي الصوت: 2 مكبر صوت الاتصال: لان لاسلكي 802.11ac ، جيجابت لان البطارية: 2 خلية نظام التشغيل: لينكس الكاميرا:0.3M في ..." />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="يو إس بيUSB 2.0 &amp; 3.0 حجم الشاشة (انش)15.6 Inch العلامة التجارية لمتحكم الفيديوAMD العلامة التجاريةايسر المعالج: A8-7410 ( 2 ميجا كاش، 2.2 جيجاهرتز) الذاكرة: 4 جيجابايت DDR3L القرص الصلب: 1 تيرابايت بطاقة رسومات: مشترك - مدمج الشاشة: 15.6 بوصة اتش دي دقة (1366 x 768) المحرك الضوئي: ناسخ دي في دي المنافذ: 1x يو اس بي 3.0, 2x يو اس بي 2.0, شبكة (RJ-45), مخرج اتش دي ام اي الصوت: 2 مكبر صوت الاتصال: لان لاسلكي 802.11ac ، جيجابت لان البطارية: 2 خلية نظام التشغيل: لينكس الكاميرا:0.3M في ..."
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
