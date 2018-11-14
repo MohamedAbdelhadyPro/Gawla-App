@@ -403,7 +403,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:layout_weight="3"
+                            android:layout_weight="4"
                             android:orientation="vertical">
 
                             <TextView
@@ -444,14 +444,14 @@
 
                                 <TextView
                                     android:id="@+id/textView21"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="30dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:fontFamily="@font/cairo_bold"
                                     android:gravity="center"
                                     android:text="@string/money"
                                     android:textColor="@color/azureTwo"
-                                    android:textSize="16sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
