@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingLeft="20dp"
-    android:scrollbars="none"
-    android:paddingRight="20dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
         android:background="@drawable/bg_rounded_corners_white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="3dp">
-        <!-- main layout -->
+        app:cardCornerRadius="@dimen/margin_small"
+        app:cardElevation="@dimen/margin_tiny">
+        <!-- card view main layout -->
         <LinearLayout
-            android:layout_width="300dp"
+            android:layout_width="@dimen/image_width_round"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_tiny"
             android:focusableInTouchMode="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -33,7 +31,7 @@
                 <ImageView
                     android:id="@+id/round_product_image"
                     android:layout_width="match_parent"
-                    android:layout_height="165dp"
+                    android:layout_height="@dimen/image_height_round"
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_launcher_foreground" />
 
@@ -43,9 +41,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/margin_tiny"
                     android:background="@drawable/bg_rounded_corners_orange"
-                    android:padding="5dp"
+                    android:padding="@dimen/margin_tiny"
                     android:text="category"
                     android:textColor="@android:color/white" />
 
@@ -55,8 +53,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
                 android:background="@color/paleGrey" />
 
             <!-- name -->
@@ -66,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:text="name"
                 android:textColor="@color/bgBlueDark"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_medium" />
 
             <!-- price container -->
             <LinearLayout
@@ -77,7 +75,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
+                    android:layout_margin="@dimen/margin_tiny"
                     android:text="@string/sell_price"
                     android:textColor="@color/blueyGrey" />
 
@@ -86,7 +84,7 @@
                     android:id="@+id/round_product_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
+                    android:layout_margin="@dimen/margin_tiny"
                     android:text="price"
                     android:textColor="@color/colorOrange" />
 
@@ -96,16 +94,16 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
                 android:background="@color/paleGrey" />
 
             <!-- time container -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
                 android:gravity="center_vertical">
 
                 <!-- icon -->
@@ -118,7 +116,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="@dimen/margin_small"
                     android:layout_weight="1"
                     android:text="@string/round_start"
                     android:textColor="@color/battleshipGrey" />
@@ -126,8 +124,8 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_small"
                     android:layout_weight="1.4"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -139,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:text="time"
                         android:textColor="@color/midBlue"
-                        android:textSize="18sp" />
+                        android:textSize="@dimen/text_size_large" />
 
                     <!-- end time container -->
                     <LinearLayout
@@ -153,19 +151,19 @@
                             android:gravity="end"
                             android:text="@string/close"
                             android:textColor="@color/blueyGrey"
-                            android:textSize="10sp" />
+                            android:textSize="@dimen/text_size_tiny" />
 
                         <!--  end time -->
                         <TextView
                             android:id="@+id/round_end_time"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="4dp"
-                            android:layout_marginStart="4dp"
+                            android:layout_marginStart="@dimen/margin_tiny"
+                            android:layout_marginEnd="@dimen/margin_tiny"
                             android:gravity="end"
                             android:text="close time"
                             android:textColor="@color/paleRed"
-                            android:textSize="14sp" />
+                            android:textSize="@dimen/text_size_medium" />
 
                     </LinearLayout>
 
@@ -177,16 +175,16 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
                 android:background="@color/paleGrey" />
 
             <!-- members & cards container -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
                 android:gravity="center_vertical">
 
                 <!-- icon -->
@@ -200,9 +198,8 @@
                     android:id="@+id/round_members_number"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="@dimen/margin_small"
                     android:layout_weight="1"
-                    android:text="members"
                     android:textColor="@color/battleshipGrey" />
 
                 <!-- cards label -->
@@ -213,16 +210,16 @@
 
                 <!-- red card -->
                 <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="32dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/margin_medium"
+                    android:layout_height="@dimen/margin_xxlarge"
+                    android:layout_marginStart="@dimen/margin_tiny"
                     android:src="@drawable/card_red" />
 
                 <!-- green card -->
                 <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="32dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/margin_medium"
+                    android:layout_height="@dimen/margin_xxlarge"
+                    android:layout_marginStart="@dimen/margin_tiny"
                     android:src="@drawable/card_green" />
 
             </LinearLayout>
@@ -231,8 +228,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
                 android:background="@color/paleGrey" />
 
             <!-- offer container -->
@@ -245,13 +242,13 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="@dimen/margin_tiny"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_tiny"
+                    android:layout_marginBottom="@dimen/margin_small"
                     android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
+                    app:cardCornerRadius="@dimen/margin_small"
+                    app:cardElevation="@dimen/margin_tiny">
 
                     <TextView
                         android:id="@+id/round_btn_join"
@@ -259,11 +256,11 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_rounded_corners_blue_270"
                         android:gravity="center"
-                        android:padding="15dp"
+                        android:padding="@dimen/margin_medium"
                         android:text="@string/add_offer"
                         android:textAllCaps="true"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/text_size_large"
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
@@ -272,20 +269,21 @@
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="10dp"
-                    android:inputType="numberDecimal"
+                    android:layout_marginStart="@dimen/margin_tiny"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_tiny"
+                    android:layout_marginBottom="@dimen/margin_small"
                     android:layout_weight="1"
                     android:background="@drawable/bg_rounded_corners_bordered_white_pale_grey"
                     android:gravity="center"
                     android:hint="0.00 EGP"
-                    android:textSize="18sp"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/text_size_large"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
-</ScrollView>
+
+</FrameLayout>

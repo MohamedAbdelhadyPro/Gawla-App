@@ -6,9 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 import it_geeks.info.gawla_app.R;
 
@@ -22,7 +19,7 @@ public class ProductImageAdapter extends RecyclerView.Adapter<ProductImageAdapte
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-      View v =  LayoutInflater.from(context).inflate(R.layout.img_product_item,viewGroup,false);
+      View v =  LayoutInflater.from(context).inflate(R.layout.item_product_image,viewGroup,false);
       Holder holder = new Holder(v);
       return holder;
     }

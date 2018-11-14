@@ -280,12 +280,15 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
+<<<<<<< HEAD
+                                    android:layout_height="45dp"
+=======
                                     android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
+>>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                                     android:layout_marginStart="5dp"
-                                    android:background="@drawable/timeshape"
-                                    android:gravity="center">
+                                    android:background="@drawable/timeshape">
 
                                     <TextView
                                         android:id="@+id/textView56"
@@ -308,12 +311,15 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
+<<<<<<< HEAD
+                                    android:layout_height="45dp"
+=======
                                     android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
+>>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                                     android:layout_marginStart="5dp"
-                                    android:background="@drawable/timeshape"
-                                    android:gravity="center">
+                                    android:background="@drawable/timeshape">
 
                                     <TextView
                                         android:id="@+id/textView36"
