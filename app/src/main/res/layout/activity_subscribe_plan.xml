@@ -38,7 +38,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/cairo_bold"
                 android:gravity="center"
-                android:text="تهانينا"
+                android:text="@string/Congratulations"
                 android:textColor="@color/midBlue"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="154dp"
@@ -55,7 +55,7 @@
                 android:fontFamily="@font/cairo_semibold"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="لتتمتع بمزايا الانضمام  للصالة و تقدم العروض و ربح الجولات"
+                android:text="@string/payment_enjoy"
                 android:textColor="@color/midBlue"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="154dp"
@@ -93,7 +93,7 @@
                             android:layout_alignParentTop="true"
                             android:fontFamily="@font/cairo_bold"
                             android:gravity="center"
-                            android:text="عضوية شهرية"
+                            android:text="@string/Monthly_membership2"
                             android:textColor="@color/duskBlue"
                             android:textSize="20sp" />
 
@@ -105,7 +105,7 @@
                             android:layout_alignParentTop="true"
                             android:fontFamily="@font/cairo_semibold"
                             android:gravity="center"
-                            android:text="تدفع مقدماً  84EGP سنويا"
+                            android:text="@string/Paying_up"
                             android:textSize="14sp" />
 
                         <TextView
@@ -115,7 +115,7 @@
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
                             android:gravity="center"
-                            android:text="10 EGP / شهريا"
+                            android:text="@string/Monthly10"
                             android:textColor="@android:color/white"
                             android:textSize="24sp" />
 
@@ -127,7 +127,7 @@
                             android:layout_alignParentTop="true"
                             android:fontFamily="@font/cairo_bold"
                             android:gravity="center"
-                            android:text="يمكن دخول صالة واحدة يومياً"
+                            android:text="@string/One_lounge1"
                             android:textColor="@android:color/white"
                             android:textSize="16sp" />
 
@@ -146,10 +146,12 @@
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_marginTop="14dp"
                     android:layout_marginEnd="29dp"
-                    android:background="@drawable/shape_triangle2">
+                    android:layout_marginStart="29dp"
+                    android:background="@drawable/shape_triangle2"
+                    android:gravity="right">
 
                 </RelativeLayout>
 
@@ -191,7 +193,7 @@
                                     android:layout_alignParentTop="true"
                                     android:fontFamily="@font/cairo_bold"
                                     android:gravity="center"
-                                    android:text="عضوية شهرية"
+                                    android:text="@string/Monthly_membership2"
                                     android:textColor="@color/muddyBrown"
                                     android:textSize="20sp"
                                     tools:ignore="DuplicateIds" />
@@ -204,7 +206,7 @@
                                     android:layout_alignParentTop="true"
                                     android:fontFamily="@font/cairo_semibold"
                                     android:gravity="center"
-                                    android:text="تدفع مقدماً  84EGP سنويا"
+                                    android:text="@string/Paying_up"
                                     android:textSize="14sp"
                                     tools:ignore="DuplicateIds" />
 
@@ -215,7 +217,7 @@
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
                                     android:gravity="center"
-                                    android:text="17 EGP / شهريا"
+                                    android:text="@string/Monthly17"
                                     android:textColor="@android:color/white"
                                     android:textSize="24sp"
                                     tools:ignore="DuplicateIds" />
@@ -228,7 +230,7 @@
                                     android:layout_alignParentTop="true"
                                     android:fontFamily="@font/cairo_bold"
                                     android:gravity="center"
-                                    android:text="* يمكن دخول صالة واحدة يومياً"
+                                    android:text="@string/One_lounge2"
                                     android:textColor="@android:color/white"
                                     android:textSize="16sp"
                                     tools:ignore="DuplicateIds" />
@@ -243,10 +245,12 @@
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_marginTop="14dp"
                     android:layout_marginEnd="29dp"
+                    android:layout_marginStart="29dp"
                     android:background="@drawable/shape_triangle"
+                    android:gravity="right"
                     android:rotation="270">
 
 
@@ -257,11 +261,13 @@
                     android:layout_width="52dp"
                     android:layout_height="46dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="39dp"
+                    android:layout_marginStart="39dp"
                     android:fontFamily="@font/cairo_bold"
-                    android:text="توفير"
+                    android:gravity="top|center"
+                    android:text="@string/offer"
                     android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
@@ -270,10 +276,13 @@
                     android:layout_width="52dp"
                     android:layout_height="46dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="33dp"
                     android:layout_marginTop="31dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginRight="33dp"
                     android:fontFamily="@font/cairo_bold"
+                    android:gravity="top|center"
                     android:text=" 20%"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />

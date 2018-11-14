@@ -83,7 +83,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="تعرف علي المزيد من تطبيق الجولة"
+                            android:text="@string/Learn_more_about_the_tour"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
@@ -93,7 +93,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_small"
                             android:gravity="center"
-                            android:text="مساحة اعلانات عن الجولات المميزة"
+                            android:text="@string/Advertising_space_for_special_tours"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/text_size_tiny" />
 

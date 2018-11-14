@@ -53,15 +53,15 @@ public class onBoardActivity extends AppCompatActivity {
                 mCurrentPage = i;
                 if (i == 0){
                     txtback.setVisibility(View.INVISIBLE);
-                    txtnext.setText("التالي");
+                    txtnext.setText(R.string.next);
                 }else if (i == 1){
                     txtback.setVisibility(View.VISIBLE);
-                    txtnext.setText("التالي");
-                    txtback.setText("السابق");
+                    txtnext.setText(R.string.next);
+                    txtback.setText(R.string.back);
                 }else if(i == 2){
                     txtback.setVisibility(View.VISIBLE);
-                    txtnext.setText("انهاء");
-                    txtback.setText("السابق");
+                    txtnext.setText(R.string.finish);
+                    txtback.setText(R.string.back);
                 }
             }
 

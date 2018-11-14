@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Gawla</string>
+    <string name="app_name">الجولة</string>
     <string name="see_all">شاهد الكل</string>
     <string name="round_start">بداية الجولة</string>
     <string name="close">"اغلاق "</string>
@@ -54,4 +54,51 @@
     <string name="new_offer">عرض جديد</string>
     <string name="add_offer">إضافة عرض</string>
     <string name="winners_of_hale_news">اخبار رابحين  الصالة</string>
+    <string name="tit1">"جوله هي تطبيق تفاعلي يمكنك من شراء المنتجات بناء علي افضل عرض تقدمة لسعر المنتج , انضم الان "</string>
+    <string name="wile_send_password">سيتم ارسال البريد الالكتروني  لتجديد كلمة السر</string>
+    <string name="hale_number">الصالة رقم : </string>
+    <string name="second">ثانية</string>
+    <string name="Minute">دقيقة</string>
+    <string name="hour">ساعة</string>
+    <string name="Discount_the_tour">حسم الجولة    </string>
+    <string name="Prod_price">سعر البيع : </string>
+    <string name="money">جنية</string>
+    <string name="read_more">اقراء المزيد</string>
+    <string name="joine_Round">انضم للصالة العضو </string>
+    <string name="mumber_joined_round">    15  عضو انضمو للجولة </string>
+    <string name="next">التالي</string>
+    <string name="back">السابق</string>
+    <string name="finish">انهاء</string>
+    <string name="login_account">تسجيل الدخول</string>
+    <string name="Payment">الدفع</string>
+    <string name="payment_step">خطوة واحدة تفصلك عن التسجيل في الجولة لتتمتع بمزايا الانضمام  للصالة و تقدم العروض و ربح الجولات </string>
+    <string name="Payment_numberOfCard">رقم بطاقة الائتمان</string>
+    <string name="NameOfCard">الاسم علي البطاقة</string>
+    <string name="Card_PIN">الرقم السري للبطاقة</string>
+    <string name="Expiry_date">تاريخ الانتهاء</string>
+    <string name="Monthly_membership">10 EGP / عضوية شهرية</string>
+    <string name="Confirm_payment">تاكيد الدفع</string>
+    <string name="Congratulations">تهانينا</string>
+    <string name="payment_enjoy">لتتمتع بمزايا الانضمام  للصالة و تقدم العروض و ربح الجولات</string>
+    <string name="Monthly_membership2">عضوية شهرية</string>
+    <string name="Paying_up">تدفع مقدماً  84EGP سنويا</string>
+    <string name="offer">توفير</string>
+    <string name="Monthly10">10 EGP / شهريا</string>
+    <string name="Monthly17">17 EGP / شهريا</string>
+    <string name="One_lounge1">يمكن دخول صالة واحدة يومياً</string>
+    <string name="One_lounge2"> * يمكن دخول اي صالة  يومياً</string>
+    <string name="skip">تخطي</string>
+    <string name="nati">انضم الصالة العضو سالم الدوثري</string>
+    <string name="Learn_more_about_the_tour">تعرف علي المزيد من تطبيق الجولة</string>
+    <string name="Advertising_space_for_special_tours">مساحة اعلانات عن الجولات المميزة</string>
+    <string name="Product_displayed">المنتج المعروض</string>
+    <string name="the_description">الوصف : </string>
+    <string name="start_play">ابداء اللعب</string>
+    <string name="add_deal">اضف عرض</string>
+    <string name="Attention">تنبية</string>
+    <string name="Attention_Details">هل تريد حقاً الانضمام الي الصالة  لديك فرصه واحده للمشاركة كل يوم</string>
+    <string name="Congratulations_Attention">تهانيناً انت الان عضو بالصالة</string>
+    <string name="Congratulations_Attention_Details">اضف افضل عرض لربح الجوالات و قم بمتابعة شنطة الكروت و استخدم الكروت لديك</string>
+
+
 </resources>

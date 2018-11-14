@@ -26,7 +26,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/cairo_bold"
                 android:gravity="center"
-                android:text="الدفع"
+                android:text="@string/Payment"
                 android:textColor="@color/midBlue"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="154dp"
@@ -43,7 +43,7 @@
                 android:fontFamily="@font/cairo_semibold"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="خطوة واحدة تفصلك عن التسجيل في الجولة لتتمتع بمزايا الانضمام  للصالة و تقدم العروض و ربح الجولات "
+                android:text="@string/payment_step"
                 android:textColor="@color/midBlue"
                 android:textSize="14sp"
                 tools:layout_editor_absoluteX="154dp"
@@ -54,26 +54,28 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="start"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/Payment_numberOfCard"
+                    android:textColor="@color/blueGrey"
+                    android:textSize="14sp" />
+
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="start"
                     android:paddingLeft="40dp"
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     app:srcCompat="@drawable/bitmap" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cairo_semibold"
-                    android:gravity="right"
-                    android:paddingRight="40dp"
-                    android:paddingBottom="5dp"
-                    android:text="رقم بطاقة الائتمان"
-                    android:textColor="@color/blueGrey"
-                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -86,26 +88,29 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/edittext_shape"
-                android:drawableRight="@drawable/iccreditcard"
+                android:drawableStart="@drawable/iccreditcard"
                 android:ems="10"
                 android:fontFamily="@font/cairo_regular"
-                android:gravity="right"
-                android:hint="• • • • • • • • • • • • •   "
+                android:gravity="start"
+                android:hint="   • • • • • • • • • • • • • • •"
                 android:inputType="textPersonName"
+                android:paddingStart="30dp"
                 android:paddingTop="10dp"
-                android:paddingRight="30dp"
+                android:paddingEnd="30dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_semibold"
-                android:gravity="right"
+                android:gravity="start"
+                android:paddingLeft="40dp"
                 android:paddingRight="40dp"
                 android:paddingBottom="5dp"
-                android:text="الاسم علي البطاقة"
+                android:text="@string/NameOfCard"
                 android:textColor="@color/blueGrey"
                 android:textSize="14sp" />
 
@@ -118,16 +123,18 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/edittext_shape"
-                android:drawableRight="@drawable/icperson"
+                android:drawableStart="@drawable/icperson"
                 android:ems="10"
                 android:fontFamily="@font/cairo_regular"
-                android:gravity="right"
-                android:hint="• • • • • • • • • • • • •   "
+                android:gravity="start"
+                android:hint="    • • • • • • • • • • • • • • •"
                 android:inputType="textPersonName"
+                android:paddingStart="30dp"
                 android:paddingTop="10dp"
-                android:paddingRight="30dp"
+                android:paddingEnd="30dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -135,24 +142,27 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="40dp"
-                    android:text="CVC2 "
-                    android:textColor="@color/blueGrey" />
-
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo_semibold"
-                    android:gravity="right"
+                    android:gravity="start"
+                    android:paddingLeft="40dp"
                     android:paddingRight="40dp"
                     android:paddingBottom="5dp"
-                    android:text="الرقم السري للبطاقة"
+                    android:text="@string/Card_PIN"
                     android:textColor="@color/blueGrey"
                     android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|end"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:text="CVC2 "
+                    android:textColor="@color/blueGrey" />
 
             </LinearLayout>
 
@@ -165,26 +175,29 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/edittext_shape"
-                android:drawableRight="@drawable/ichttps"
+                android:drawableStart="@drawable/ichttps"
                 android:ems="10"
                 android:fontFamily="@font/cairo_regular"
-                android:gravity="right"
-                android:hint="• • • •   "
+                android:gravity="right|start"
+                android:hint="    • • • •"
                 android:inputType="textPersonName"
+                android:paddingStart="30dp"
                 android:paddingTop="10dp"
-                android:paddingRight="30dp"
+                android:paddingEnd="30dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_semibold"
-                android:gravity="right"
+                android:gravity="start"
+                android:paddingLeft="40dp"
                 android:paddingRight="40dp"
                 android:paddingBottom="5dp"
-                android:text="تاريخ الانتهاء"
+                android:text="@string/Expiry_date"
                 android:textColor="@color/blueGrey"
                 android:textSize="14sp" />
 
@@ -197,16 +210,18 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/edittext_shape"
-                android:drawableRight="@drawable/icdaterange"
+                android:drawableStart="@drawable/icdaterange"
                 android:ems="10"
                 android:fontFamily="@font/cairo_regular"
-                android:gravity="right"
-                android:hint=" • •   • •   "
+                android:gravity="right|start"
+                android:hint="   • •   • •"
                 android:inputType="textPersonName"
+                android:paddingStart="30dp"
                 android:paddingTop="10dp"
-                android:paddingRight="30dp"
+                android:paddingEnd="30dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="16sp" />
 
             <RelativeLayout
                 android:id="@+id/rBtnPay"
@@ -230,7 +245,7 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/cairo_bold"
                         android:gravity="center"
-                        android:text="10 EGP / عضوية شهرية"
+                        android:text="@string/Monthly_membership"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -243,7 +258,7 @@
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/cairo_bold"
                         android:gravity="center"
-                        android:text="تاكيد الدفع"
+                        android:text="@string/Confirm_payment"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />

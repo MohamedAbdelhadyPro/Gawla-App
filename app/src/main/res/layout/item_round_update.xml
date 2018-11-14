@@ -11,12 +11,15 @@
         android:padding="@dimen/margin_small">
 
         <!-- image -->
+<<<<<<< HEAD
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/round_update_image"
             android:layout_width="@dimen/margin_xxxlarge"
             android:layout_height="@dimen/margin_xxxlarge" />
 
         <!-- texts -->
+=======
+>>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -29,6 +32,10 @@
                 android:id="@+id/round_update_subject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+                android:text="@string/nati"
+>>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                 android:textColor="@color/blueGrey"
                 android:textSize="@dimen/text_size_small" />
 
@@ -37,10 +44,23 @@
                 android:id="@+id/round_update_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:gravity="end"
                 android:textSize="@dimen/text_size_tiny" />
+=======
+                android:gravity="start"
+                android:text="4 hrs"
+                android:textSize="10sp" />
+>>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
 
         </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/round_update_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+
+        <!-- texts -->
 
     </LinearLayout>
 
