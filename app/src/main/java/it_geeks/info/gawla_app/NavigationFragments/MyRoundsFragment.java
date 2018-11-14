@@ -21,8 +21,6 @@ public class MyRoundsFragment extends Fragment {
     private RoundsPagerAdapter roundsAdapter;
     private List<Round> roundsList = new ArrayList<>();
 
-    private LinearLayout emptyViewLayout;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -59,7 +57,7 @@ public class MyRoundsFragment extends Fragment {
     }
 
     private void initEmptyView(View view) {
-        emptyViewLayout = view.findViewById(R.id.my_rounds_empty_view);
+        LinearLayout emptyViewLayout = view.findViewById(R.id.my_rounds_empty_view);
 
         if (roundsList.size() > 0) {
             emptyViewLayout.setVisibility(View.INVISIBLE);
