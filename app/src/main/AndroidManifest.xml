@@ -27,6 +27,7 @@
         <activity android:name=".LoginActivities.ForgetPasswordActivity" />
         <activity android:name=".LoginActivities.CreateAccountActivity" />
         <activity android:name=".LoginActivities.LoginActivity" />
+        <activity android:name=".ProductDetailsActivity"/>
     </application>
 
 </manifest>

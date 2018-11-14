@@ -567,9 +567,30 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </android.support.v7.widget.CardView>
+
             </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnJoineRound"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/login_shape"
+                android:fontFamily="@font/cairo_bold"
+                android:gravity="center"
+                android:text="@string/join_round"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
             <RelativeLayout
                 android:id="@+id/divPro3"
@@ -684,7 +705,7 @@
                         android:background="@drawable/login_shape"
                         android:fontFamily="@font/cairo_bold"
                         android:gravity="center"
-                        android:text="اضف عرض"
+                        android:text="@string/add_deal"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -750,7 +771,7 @@
                         android:inputType="textPersonName"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="تنبيه"
+                        android:text="@string/Attention"
                         android:textColor="@color/midBlue"
                         android:textColorHint="@color/editText_hint"
                         android:textSize="18sp" />
@@ -765,7 +786,7 @@
                         android:gravity="center"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
-                        android:text="هل تريد حقاً الانضمام الي الصالة  لديك فرصه واحده للمشاركة كل يوم"
+                        android:text="@string/Attention_Details"
                         android:textColor="@color/blueGrey"
                         android:textSize="14sp" />
 
@@ -783,7 +804,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/login_shape"
             android:fontFamily="@font/cairo_bold"
-            android:text="انضم للجولة"
+            android:text="@string/join_round"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -797,7 +818,7 @@
         android:background="@color/black_overlay"
         android:gravity="bottom"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -844,7 +865,7 @@
                         android:inputType="textPersonName"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="تهانيناً انت الان عضو بالصالة"
+                        android:text="@string/Congratulations_Attention"
                         android:textColor="@color/greenblue"
                         android:textColorHint="@color/editText_hint"
                         android:textSize="18sp" />
@@ -859,7 +880,7 @@
                         android:gravity="center"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
-                        android:text="اضف افضل عرض لربح الجوالات و قم بمتابعة شنطة الكروت و استخدم الكروت لديك"
+                        android:text="@string/Congratulations_Attention_Details"
                         android:textColor="@color/blueGrey"
                         android:textSize="14sp" />
 
@@ -879,30 +900,10 @@
             android:background="@drawable/joined_play_shape"
             android:fontFamily="@font/cairo_bold"
             android:gravity="center"
-            android:text="انضم للجولة"
+            android:text="@string/start_play"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnJoineRound"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/login_shape"
-        android:fontFamily="@font/cairo_bold"
-        android:gravity="center"
-        android:text="@string/join_round"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
