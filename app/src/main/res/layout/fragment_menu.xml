@@ -22,33 +22,33 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_large">
 
                 <!-- logo -->
                 <ImageView
-                    android:layout_width="140dp"
-                    android:layout_height="80dp"
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
                     android:layout_centerInParent="true"
                     android:src="@drawable/gawla_logo_blue" />
 
                 <!-- bell -->
                 <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="@dimen/icon_notification"
+                    android:layout_height="@dimen/icon_notification"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginRight="4dp"
+                    android:layout_marginRight="@dimen/margin_tiny"
                     android:src="@drawable/ic_bell" />
 
                 <!-- country -->
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/icon_notification"
+                    android:layout_height="@dimen/icon_notification"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="4dp"
+                    android:layout_marginStart="@dimen/margin_tiny"
                     android:src="@drawable/flag_egypt" />
 
             </RelativeLayout>
@@ -57,18 +57,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/margin_small"
                 android:gravity="center"
                 android:text="@string/menu_fragment_title"
                 android:textColor="@color/blueGrey"
-                android:textSize="17sp"
+                android:textSize="@dimen/text_size_medium"
                 android:textStyle="bold" />
 
             <!-- top border -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="@dimen/margin_large"
                 android:background="@color/paleGrey" />
 
             <!-- 1st option -->
@@ -76,10 +76,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:paddingBottom="15dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
-                android:paddingTop="15dp">
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
 
                 <!-- label -->
                 <TextView
@@ -90,7 +90,7 @@
                     android:layout_toLeftOf="@id/card_icon_1st"
                     android:text="@string/more_about_gawla"
                     android:textColor="@color/darkSkyBlue"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <!-- icon -->
                 <ImageView
@@ -106,8 +106,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginStart="22dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
                 android:background="@color/paleGrey" />
 
             <!-- 2nd option -->
@@ -115,10 +115,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:paddingBottom="15dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
-                android:paddingTop="15dp">
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
 
                 <!-- label -->
                 <TextView
@@ -129,7 +129,7 @@
                     android:layout_toLeftOf="@id/card_icon_1st"
                     android:text="@string/privacy_policy"
                     android:textColor="@color/darkSkyBlue"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <!-- icon -->
                 <ImageView
@@ -145,8 +145,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginEnd="22dp"
-                android:layout_marginStart="22dp"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
                 android:background="@color/paleGrey" />
 
             <!-- 3rd option -->
@@ -154,10 +154,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:paddingBottom="15dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
-                android:paddingTop="15dp">
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
 
                 <!-- label -->
                 <TextView
@@ -168,7 +168,7 @@
                     android:layout_toLeftOf="@id/card_icon_1st"
                     android:text="@string/terms_conditions"
                     android:textColor="@color/darkSkyBlue"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <!-- icon -->
                 <ImageView
@@ -190,7 +190,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="@dimen/margin_large"
                 android:background="@color/paleGrey" />
 
             <!-- 4th option -->
@@ -198,10 +198,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:paddingBottom="15dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
-                android:paddingTop="15dp">
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
 
                 <!-- label -->
                 <TextView
@@ -212,7 +212,7 @@
                     android:layout_toLeftOf="@id/card_icon_1st"
                     android:text="@string/call_us"
                     android:textColor="@color/darkSkyBlue"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <!-- icon -->
                 <ImageView
@@ -234,7 +234,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="@dimen/margin_large"
                 android:background="@color/paleGrey" />
 
             <!-- 5th option -->
@@ -242,10 +242,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:paddingBottom="15dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
-                android:paddingTop="15dp">
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
 
                 <!-- label -->
                 <TextView
@@ -256,7 +256,7 @@
                     android:layout_toLeftOf="@id/card_icon_1st"
                     android:text="@string/how_gawla_works"
                     android:textColor="@color/darkSkyBlue"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <!-- icon -->
                 <ImageView
