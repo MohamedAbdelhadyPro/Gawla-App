@@ -29,6 +29,7 @@
                 android:id="@+id/round_update_subject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/nati"
                 android:textColor="@color/blueGrey"
                 android:textSize="@dimen/text_size_small" />
 
@@ -37,8 +38,9 @@
                 android:id="@+id/round_update_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="end"
-                android:textSize="@dimen/text_size_tiny" />
+                android:textSize="@dimen/text_size_tiny"
+                android:gravity="start"
+                android:text="4 hrs" />
 
         </LinearLayout>
 
