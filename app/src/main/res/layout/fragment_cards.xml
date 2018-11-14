@@ -15,8 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/margin_medium"
-            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
             android:focusableInTouchMode="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -25,22 +25,22 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_large">
+                android:layout_marginTop="20dp">
 
                 <!-- logo -->
                 <ImageView
-                    android:layout_width="@dimen/logo_width"
-                    android:layout_height="@dimen/logo_height"
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
                     android:layout_centerInParent="true"
                     android:src="@drawable/gawla_logo_blue" />
 
                 <!-- bell -->
                 <ImageView
-                    android:layout_width="@dimen/icon_notification"
-                    android:layout_height="@dimen/icon_notification"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginEnd="@dimen/margin_tiny"
+                    android:layout_marginEnd="4dp"
                     android:src="@drawable/ic_bell" />
 
             </RelativeLayout>
@@ -49,24 +49,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_small"
+                android:layout_margin="10dp"
                 android:gravity="center"
                 android:text="@string/cards_bag"
                 android:textAllCaps="true"
                 android:textColor="@color/midBlue"
-                android:textSize="@dimen/text_size_large"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <!-- green card container -->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_large"
-                android:layout_marginEnd="@dimen/margin_tiny"
-                android:layout_marginStart="@dimen/margin_tiny"
-                android:layout_marginTop="@dimen/margin_tiny"
-                app:cardCornerRadius="@dimen/margin_small"
-                app:cardElevation="@dimen/margin_tiny">
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
                 <!-- card view main layout -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -76,7 +76,7 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_small"
+                        android:layout_margin="12dp"
                         android:layout_weight="2"
                         android:orientation="vertical">
 
@@ -84,19 +84,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="@string/dont_have_green_card"
                             android:textColor="@color/battleshipGrey"
-                            android:textSize="@dimen/text_size_large" />
+                            android:textSize="18sp" />
 
                         <!-- description -->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="يمكنك شراء الكارت الاخضر من اعادة فتح  الجولة لمدة ١٥ دقيقة "
                             android:textColor="@color/blueyGrey"
-                            android:textSize="@dimen/text_size_small" />
+                            android:textSize="13sp" />
 
                     </LinearLayout>
 
@@ -104,28 +104,28 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="@dimen/margin_tiny"
+                        android:layout_margin="5dp"
                         android:layout_weight="1">
 
                         <!-- green card icon -->
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="@dimen/margin_small"
+                            android:layout_margin="8dp"
                             android:background="@drawable/bg_circle_grey"
-                            android:padding="@dimen/margin_large"
+                            android:padding="20dp"
                             android:src="@drawable/card_green" />
 
                         <!-- counter -->
                         <TextView
-                            android:layout_width="@dimen/margin_xxlarge"
-                            android:layout_height="@dimen/margin_xxlarge"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
                             android:background="@drawable/bg_circle_red"
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="@dimen/text_size_medium"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -137,11 +137,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_large"
-                android:layout_marginEnd="@dimen/margin_tiny"
-                android:layout_marginStart="@dimen/margin_tiny"
-                app:cardCornerRadius="@dimen/margin_small"
-                app:cardElevation="@dimen/margin_tiny">
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
                 <!-- card view main layout -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -151,7 +151,7 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_small"
+                        android:layout_margin="12dp"
                         android:layout_weight="2"
                         android:orientation="vertical">
 
@@ -159,19 +159,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="@string/dont_have_red_card"
                             android:textColor="@color/battleshipGrey"
-                            android:textSize="@dimen/text_size_large" />
+                            android:textSize="18sp" />
 
                         <!-- description -->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="يمكنك شراء الكارت الاخضر من اعادة فتح  الجولة لمدة ١٥ دقيقة "
                             android:textColor="@color/blueyGrey"
-                            android:textSize="@dimen/text_size_small" />
+                            android:textSize="13sp" />
 
                     </LinearLayout>
 
@@ -179,28 +179,28 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="@dimen/margin_tiny"
+                        android:layout_margin="5dp"
                         android:layout_weight="1">
 
                         <!-- card icon -->
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="@dimen/margin_small"
+                            android:layout_margin="8dp"
                             android:background="@drawable/bg_circle_grey"
-                            android:padding="@dimen/margin_large"
+                            android:padding="20dp"
                             android:src="@drawable/card_red" />
 
                         <!-- counter -->
                         <TextView
-                            android:layout_width="@dimen/margin_xxlarge"
-                            android:layout_height="@dimen/margin_xxlarge"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
                             android:background="@drawable/bg_circle_red"
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="@dimen/text_size_medium"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -212,11 +212,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_large"
-                android:layout_marginEnd="@dimen/margin_tiny"
-                android:layout_marginStart="@dimen/margin_tiny"
-                app:cardCornerRadius="@dimen/margin_small"
-                app:cardElevation="@dimen/margin_tiny">
+                android:layout_marginBottom="22dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
                 <!-- card view main layout -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -226,7 +226,7 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_small"
+                        android:layout_margin="12dp"
                         android:layout_weight="2"
                         android:orientation="vertical">
 
@@ -234,19 +234,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="@string/dont_have_yellow_card"
                             android:textColor="@color/battleshipGrey"
-                            android:textSize="@dimen/text_size_large" />
+                            android:textSize="18sp" />
 
                         <!-- description -->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="يمكنك شراء الكارت الاخضر من اعادة فتح  الجولة لمدة ١٥ دقيقة "
                             android:textColor="@color/blueyGrey"
-                            android:textSize="@dimen/text_size_small" />
+                            android:textSize="13sp" />
 
                     </LinearLayout>
 
@@ -254,28 +254,28 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="@dimen/margin_tiny"
+                        android:layout_margin="5dp"
                         android:layout_weight="1">
 
                         <!-- card icon -->
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="@dimen/margin_small"
+                            android:layout_margin="8dp"
                             android:background="@drawable/bg_circle_grey"
-                            android:padding="@dimen/margin_large"
+                            android:padding="20dp"
                             android:src="@drawable/card_yellow" />
 
                         <!-- counter -->
                         <TextView
-                            android:layout_width="@dimen/margin_xxlarge"
-                            android:layout_height="@dimen/margin_xxlarge"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
                             android:background="@drawable/bg_circle_red"
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="@dimen/text_size_medium"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>

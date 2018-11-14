@@ -23,10 +23,10 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_tiny_minus"
-                android:layout_marginBottom="@dimen/margin_xlarge"
-                app:cardCornerRadius="@dimen/margin_small"
-                app:cardElevation="@dimen/margin_small">
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="-5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
                 <!-- card view main layout -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -39,25 +39,25 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_medium"
-                        android:layout_marginTop="@dimen/margin_large"
-                        android:layout_marginEnd="@dimen/margin_medium">
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp">
 
                         <!-- logo -->
                         <ImageView
-                            android:layout_width="@dimen/logo_width"
-                            android:layout_height="@dimen/logo_height"
+                            android:layout_width="140dp"
+                            android:layout_height="80dp"
                             android:layout_centerInParent="true"
                             android:src="@drawable/gawla_logo_blue" />
 
                         <!-- bell -->
                         <ImageView
-                            android:layout_width="@dimen/icon_notification"
-                            android:layout_height="@dimen/icon_notification"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="0dp"
-                            android:layout_marginRight="@dimen/margin_tiny"
+                            android:layout_marginRight="4dp"
                             android:src="@drawable/ic_bell" />
 
                     </RelativeLayout>
@@ -66,31 +66,31 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_small">
+                        android:layout_marginBottom="8dp">
 
                         <!-- just a placeholder for icon -->
                         <ImageView
-                            android:layout_width="@dimen/image_account"
-                            android:layout_height="@dimen/image_account"
-                            android:layout_margin="@dimen/margin_tiny"
-                            android:background="@drawable/bg_circle_bordered_pale_grey2"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="4dp"
                             android:scaleType="centerInside"
-                            android:src="@drawable/ic_user" />
+                            android:src="@drawable/ic_user"
+                            android:background="@drawable/bg_circle_bordered_pale_grey2" />
 
                         <!-- image -->
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="@dimen/image_account"
-                            android:layout_height="@dimen/image_account"
-                            android:layout_margin="@dimen/margin_tiny"
-                            app:civ_border_color="@color/blueyGrey"
-                            app:civ_border_width="1dp" />
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="4dp"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/blueyGrey"/>
 
                         <!-- btn edit -->
                         <ImageView
-                            android:layout_width="@dimen/margin_xxlarge"
-                            android:layout_height="@dimen/margin_xxlarge"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:background="@drawable/bg_circle_mid_blue"
-                            android:padding="@dimen/margin_tiny"
+                            android:padding="5dp"
                             android:src="@drawable/ic_edit" />
 
                     </RelativeLayout>
@@ -99,11 +99,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_small"
+                        android:layout_margin="10dp"
                         android:gravity="center"
                         android:text="ITGeeks"
                         android:textColor="@color/midBlue"
-                        android:textSize="@dimen/text_size_large"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -113,11 +113,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium"
-                android:layout_marginEnd="@dimen/margin_medium"
-                android:layout_marginBottom="@dimen/margin_medium"
-                app:cardCornerRadius="@dimen/margin_tiny"
-                app:cardElevation="@dimen/margin_tiny">
+                android:layout_marginBottom="15sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
                 <!-- card view main layout -->
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -128,8 +128,8 @@
                         android:id="@+id/card_icon_1st"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
                         android:layout_alignParentRight="true"
-                        android:layout_margin="@dimen/margin_medium"
                         android:src="@drawable/ic_user" />
 
                     <!-- label -->
@@ -140,15 +140,15 @@
                         android:layout_toLeftOf="@id/card_icon_1st"
                         android:text="@string/account_details"
                         android:textColor="@color/darkSkyBlue"
-                        android:textSize="@dimen/text_size_large" />
+                        android:textSize="18sp" />
 
                     <!-- icon -->
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
+                        android:layout_margin="15dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_alignParentLeft="true"
                         android:src="@drawable/ic_arrow_right" />
 
                 </RelativeLayout>
@@ -158,11 +158,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium"
-                android:layout_marginEnd="@dimen/margin_medium"
-                android:layout_marginBottom="@dimen/margin_medium"
-                app:cardCornerRadius="@dimen/margin_tiny"
-                app:cardElevation="@dimen/margin_tiny">
+                android:layout_marginBottom="15sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
                 <!-- card view main layout -->
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -173,27 +173,27 @@
                         android:id="@+id/card_icon_2st"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
                         android:layout_alignParentRight="true"
-                        android:layout_margin="@dimen/margin_medium"
                         android:src="@drawable/ic_credit_card" />
 
                     <!-- label -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@id/card_icon_2st"
                         android:text="@string/buying_processes"
                         android:textColor="@color/darkSkyBlue"
-                        android:textSize="@dimen/text_size_large" />
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/card_icon_2st"
+                        android:textSize="18sp" />
 
                     <!-- icon -->
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
+                        android:layout_margin="15dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_alignParentLeft="true"
                         android:src="@drawable/ic_arrow_right" />
 
                 </RelativeLayout>
@@ -203,11 +203,11 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium"
-                android:layout_marginEnd="@dimen/margin_medium"
-                android:layout_marginBottom="@dimen/margin_medium"
-                app:cardCornerRadius="@dimen/margin_tiny"
-                app:cardElevation="@dimen/margin_tiny">
+                android:layout_marginBottom="15sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
                 <!-- card view main layout -->
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -218,27 +218,27 @@
                         android:id="@+id/card_icon_3st"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
                         android:layout_alignParentRight="true"
-                        android:layout_margin="@dimen/margin_medium"
                         android:src="@drawable/ic_lock" />
 
                     <!-- label -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@id/card_icon_3st"
                         android:text="@string/privacy_policy"
                         android:textColor="@color/darkSkyBlue"
-                        android:textSize="@dimen/text_size_large" />
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/card_icon_3st"
+                        android:textSize="18sp" />
 
                     <!-- icon -->
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
+                        android:layout_margin="15dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_alignParentLeft="true"
                         android:src="@drawable/ic_arrow_right" />
 
                 </RelativeLayout>

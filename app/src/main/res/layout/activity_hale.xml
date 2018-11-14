@@ -280,15 +280,12 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-<<<<<<< HEAD
-                                    android:layout_height="45dp"
-=======
                                     android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
->>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                                     android:layout_marginStart="5dp"
-                                    android:background="@drawable/timeshape">
+                                    android:background="@drawable/timeshape"
+                                    android:gravity="center">
 
                                     <TextView
                                         android:id="@+id/textView56"
@@ -311,15 +308,12 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-<<<<<<< HEAD
-                                    android:layout_height="45dp"
-=======
                                     android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
->>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                                     android:layout_marginStart="5dp"
-                                    android:background="@drawable/timeshape">
+                                    android:background="@drawable/timeshape"
+                                    android:gravity="center">
 
                                     <TextView
                                         android:id="@+id/textView36"
@@ -586,9 +580,9 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="32dp"
                 android:background="@drawable/login_shape"
                 android:fontFamily="@font/cairo_bold"
                 android:gravity="center"
@@ -858,16 +852,22 @@
                         app:srcCompat="@drawable/joinedrounddone" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/TextView50"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
+                        android:ems="10"
                         android:fontFamily="@font/cairo_bold"
                         android:gravity="center"
-                        android:padding="5dp"
+                        android:inputType="textPersonName"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
                         android:text="@string/Congratulations_Attention"
                         android:textColor="@color/greenblue"
+                        android:textColorHint="@color/editText_hint"
                         android:textSize="18sp" />
 
                     <TextView
@@ -878,7 +878,8 @@
                         android:layout_marginRight="40dp"
                         android:layout_marginBottom="20dp"
                         android:gravity="center"
-                        android:padding="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
                         android:text="@string/Congratulations_Attention_Details"
                         android:textColor="@color/blueGrey"
                         android:textSize="14sp" />

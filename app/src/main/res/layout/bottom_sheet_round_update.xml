@@ -15,39 +15,38 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_small_minus"
-            android:layout_marginTop="@dimen/margin_xxlarge"
-            app:cardCornerRadius="@dimen/margin_medium">
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="15dp">
             <!-- card view main layout -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_small_minus"
+                android:layout_margin="10dp"
                 android:orientation="vertical">
 
                 <!-- header -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_small"
-                    android:layout_marginBottom="@dimen/margin_medium"
-                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="18dp"
                     android:text="@string/cards_bag"
                     android:textColor="@color/battleshipGrey"
-                    android:textSize="@dimen/text_size_medium" />
+                    android:textSize="16sp" />
 
                 <!-- green card container -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginBottom="15dp"
                     android:background="@drawable/bg_rounded_corners_pale_grey">
 
                     <!-- status & btn -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_small"
+                        android:layout_margin="12dp"
                         android:layout_weight="2"
                         android:orientation="vertical">
 
@@ -55,29 +54,29 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="@string/dont_have_green_card"
                             android:textColor="@color/battleshipGrey"
-                            android:textSize="@dimen/text_size_large" />
+                            android:textSize="18sp" />
 
                         <!-- as button -->
                         <android.support.v7.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_small"
-                            app:cardCornerRadius="@dimen/margin_small"
-                            app:cardElevation="@dimen/margin_tiny">
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp">
 
-                            <Button
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_rounded_corners_green_270"
                                 android:gravity="center"
-                                android:padding="@dimen/margin_tiny"
+                                android:padding="8dp"
                                 android:text="@string/activate_card"
                                 android:textAllCaps="true"
                                 android:textColor="@android:color/white"
-                                android:textSize="@dimen/text_size_large"
+                                android:textSize="18sp"
                                 android:textStyle="bold" />
 
                         </android.support.v7.widget.CardView>
@@ -88,28 +87,28 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="@dimen/margin_tiny"
+                        android:layout_margin="5dp"
                         android:layout_weight="1">
 
                         <!-- green card icon -->
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="@dimen/margin_small"
+                            android:layout_margin="8dp"
                             android:background="@drawable/bg_circle_white"
-                            android:padding="@dimen/margin_large"
+                            android:padding="20dp"
                             android:src="@drawable/card_green" />
 
                         <!-- counter -->
                         <TextView
-                            android:layout_width="@dimen/margin_xxlarge"
-                            android:layout_height="@dimen/margin_xxlarge"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
                             android:background="@drawable/bg_circle_red"
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="@dimen/text_size_medium"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -120,14 +119,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginBottom="15dp"
                     android:background="@drawable/bg_rounded_corners_pale_grey">
 
                     <!-- status & btn -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_small"
+                        android:layout_margin="12dp"
                         android:layout_weight="2"
                         android:orientation="vertical">
 
@@ -135,29 +134,29 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_margin="4dp"
                             android:text="@string/dont_have_red_card"
                             android:textColor="@color/battleshipGrey"
-                            android:textSize="@dimen/text_size_large" />
+                            android:textSize="18sp" />
 
                         <!-- as button -->
                         <android.support.v7.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_medium"
-                            app:cardCornerRadius="@dimen/margin_small"
-                            app:cardElevation="@dimen/margin_tiny">
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp">
 
-                            <Button
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_rounded_corners_red_270"
                                 android:gravity="center"
-                                android:padding="@dimen/margin_tiny"
+                                android:padding="8dp"
                                 android:text="@string/buy_card"
                                 android:textAllCaps="true"
                                 android:textColor="@android:color/white"
-                                android:textSize="@dimen/text_size_large"
+                                android:textSize="18sp"
                                 android:textStyle="bold" />
 
                         </android.support.v7.widget.CardView>
@@ -168,28 +167,28 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="@dimen/margin_tiny"
+                        android:layout_margin="5dp"
                         android:layout_weight="1">
 
                         <!-- red card icon -->
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="@dimen/margin_small"
+                            android:layout_margin="8dp"
                             android:background="@drawable/bg_circle_white"
-                            android:padding="@dimen/margin_large"
+                            android:padding="20dp"
                             android:src="@drawable/card_red" />
 
                         <!-- counter -->
                         <TextView
-                            android:layout_width="@dimen/margin_xxlarge"
-                            android:layout_height="@dimen/margin_xxlarge"
-                            android:layout_margin="@dimen/margin_tiny"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="3dp"
                             android:background="@drawable/bg_circle_red"
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="@dimen/text_size_medium"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -203,12 +202,12 @@
     <!-- close btn -->
     <ImageView
         android:id="@+id/close_bottom_sheet"
-        android:layout_width="@dimen/image_cards_round_updates"
-        android:layout_height="@dimen/image_cards_round_updates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="@dimen/margin_xxxlarge"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/bg_circle_blue_270"
-        android:padding="@dimen/margin_large"
+        android:padding="20dp"
         android:src="@drawable/ic_close"
         android:tint="@android:color/white" />
 
