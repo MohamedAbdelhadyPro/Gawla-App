@@ -32,13 +32,13 @@
                 android:fontFamily="@font/cairo_semibold"
                 android:text="@string/create_new_account"
                 android:textColor="@color/bg_Splash_End"
-                android:textSize="20sp"
+                android:textSize="@dimen/margin_large"
                 tools:layout_editor_absoluteX="154dp"
                 tools:layout_editor_absoluteY="39dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/margin_xxxlarge"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="40dp"
@@ -55,13 +55,14 @@
                     android:gravity="center"
                     android:text="@string/google_plus"
                     android:textColor="@android:color/white"
+                    android:textSize="@dimen/margin_medium"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/margin_xxxlarge"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="40dp"
@@ -79,6 +80,7 @@
                     android:gravity="center"
                     android:text="@string/facebook"
                     android:textColor="@android:color/white"
+                    android:textSize="@dimen/margin_medium"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -112,7 +114,8 @@
                 android:paddingStart="30dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="@dimen/margin_medium" />
 
             <EditText
                 android:id="@+id/editText3"
@@ -131,7 +134,8 @@
                 android:paddingStart="30dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="@dimen/margin_medium" />
 
             <EditText
                 android:id="@+id/editText2"
@@ -149,12 +153,13 @@
                 android:paddingStart="30dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textColorHint="@color/editText_hint" />
+                android:textColorHint="@color/editText_hint"
+                android:textSize="@dimen/margin_medium" />
 
             <Button
                 android:id="@+id/txtCreateAndLogin"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/margin_xxxlarge"
                 android:layout_gravity="center"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
@@ -164,7 +169,7 @@
                 android:gravity="center"
                 android:text="@string/login"
                 android:textColor="@android:color/white"
-                android:textSize="18sp"
+                android:textSize="@dimen/margin_large"
                 android:textStyle="bold" />
 
             <TextView
