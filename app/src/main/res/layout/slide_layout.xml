@@ -1,87 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash">
 
-<<<<<<< HEAD
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/txt_splash_skip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginTop="@dimen/margin_tiny"
-                android:layout_marginRight="@dimen/margin_medium"
-                android:fontFamily="@font/cairo_semibold"
-                android:gravity="right"
-                android:padding="@dimen/margin_tiny"
-                android:text="تخطى"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_large"
-                android:textStyle="bold" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_small">
-
-                <ImageView
-                    android:id="@+id/slide_Image"
-                    android:layout_width="@dimen/image_width_round"
-                    android:layout_height="@dimen/image_width_round"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/margin_xxxlarge"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_marginEnd="@dimen/margin_xxxlarge"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/onbord1" />
-
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/slide_Heading"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/margin_large"
-                android:fontFamily="@font/cairo_semibold"
-                android:gravity="center"
-                android:text="اشترك الان"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_large" />
-
-            <TextView
-                android:id="@+id/slide_Desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/logo_height"
-                android:layout_marginRight="@dimen/logo_height"
-                android:gravity="center"
-                android:paddingLeft="@dimen/margin_small"
-                android:paddingRight="@dimen/margin_small"
-                android:text="قم بالاشتراك الان حتي تتمكن من الانضمام للجولات المفضلة "
-                android:textColor="@color/babyBlue"
-                android:textSize="@dimen/text_size_medium" />
-=======
 
         <ScrollView
             android:layout_width="match_parent"
@@ -163,11 +87,8 @@
             </LinearLayout>
         </ScrollView>
 
->>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
 
-        </LinearLayout>
 
-    </android.support.constraint.ConstraintLayout>
 
 
 </RelativeLayout>

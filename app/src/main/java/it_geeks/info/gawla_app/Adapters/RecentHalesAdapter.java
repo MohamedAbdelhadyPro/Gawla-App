@@ -47,8 +47,8 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
         viewHolder.tvProductName.setText(round.getProductName());
         viewHolder.tvProductCategory.setText(round.getProductCategory());
         viewHolder.tvProductPrice.setText(round.getProductPrice());
-//        viewHolder.tvStartTime.setText(round.getStartTime());
-//        viewHolder.tvEndTime.setText(round.getEndTime());
+        viewHolder.tvStartTime.setText(round.getStartTime());
+        viewHolder.tvEndTime.setText(round.getEndTime());
         viewHolder.tvMembersNumber.setText(round.getJoinedMembersNumber());
 
         viewHolder.btnJoinRound.setOnClickListener(new View.OnClickListener() {

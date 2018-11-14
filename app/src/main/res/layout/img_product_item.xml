@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="@dimen/margin_tiny">
+    android:padding="5dp">
 
     <ImageView
         android:id="@+id/proImg"
-        android:layout_width="@dimen/image_cards_round_updates"
-        android:layout_height="@dimen/image_cards_round_updates"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/img_product_item_shape"
-        android:padding="@dimen/margin_tiny"
+        android:padding="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/macbook" />
-
 </android.support.constraint.ConstraintLayout>
