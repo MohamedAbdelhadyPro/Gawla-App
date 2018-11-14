@@ -280,13 +280,9 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-<<<<<<< HEAD
-                                    android:layout_height="45dp"
-=======
                                     android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
->>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                                     android:layout_marginStart="5dp"
                                     android:background="@drawable/timeshape">
 
@@ -311,13 +307,9 @@
 
                                 <RelativeLayout
                                     android:layout_width="35dp"
-<<<<<<< HEAD
-                                    android:layout_height="45dp"
-=======
                                     android:layout_height="50dp"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentTop="true"
->>>>>>> 96cbc8b8b677e9aa0423a6191669971505033a7d
                                     android:layout_marginStart="5dp"
                                     android:background="@drawable/timeshape">
 
@@ -342,9 +334,7 @@
 
                             </LinearLayout>
 
-                        </LinearLayout>
-
-                        <LinearLayout
+    <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
@@ -377,10 +367,6 @@
                                 android:textColor="@color/paleRed"
                                 android:textSize="16sp" />
                         </LinearLayout>
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/divPro1"
@@ -614,7 +600,6 @@
                     android:background="@drawable/bg_rounded_corners_white"
                     app:cardCornerRadius="8dp">
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -721,6 +706,12 @@
             </RelativeLayout>
 
         </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
     </ScrollView>
 
     <LinearLayout
@@ -910,6 +901,7 @@
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

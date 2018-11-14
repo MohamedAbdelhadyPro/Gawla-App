@@ -10,17 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".HaleActivity" />
-        <activity android:name=".RoundUpdatesActivity" />
-        <activity android:name=".SplashActivities.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HaleActivity" />
+        <activity android:name=".RoundUpdatesActivity" />
+        <activity android:name=".SplashActivities.SplashActivity" />
         <activity android:name=".SplashActivities.onBoardActivity" />
         <activity android:name=".LoginActivities.SubscribePlanActivity" />
         <activity android:name=".LoginActivities.PaymentActivity" />

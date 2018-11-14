@@ -250,7 +250,7 @@
                     app:cardCornerRadius="@dimen/margin_small"
                     app:cardElevation="@dimen/margin_tiny">
 
-                    <TextView
+                    <Button
                         android:id="@+id/round_btn_join"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
