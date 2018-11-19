@@ -5,13 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class SettingsActivity extends AppCompatActivity {
-
-    private Spinner langSpinner;
-    private boolean selectable = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +18,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void initSpinner() {
-        langSpinner = findViewById(R.id.settings_lang_spinner);
-
-
+        Spinner langSpinner = findViewById(R.id.settings_lang_spinner);
 
         langSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -46,7 +40,6 @@ public class SettingsActivity extends AppCompatActivity {
                         default:
                             break;
                     }
-
             }
 
             @Override
