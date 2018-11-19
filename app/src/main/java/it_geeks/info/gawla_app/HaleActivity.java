@@ -1,36 +1,53 @@
 package it_geeks.info.gawla_app;
 
-
-
 import android.content.Intent;
+import android.graphics.Point;
+import android.graphics.PointF;
 import android.os.Bundle;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Display;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class HaleActivity extends AppCompatActivity {
+public class HaleActivity extends AppCompatActivity implements View.OnTouchListener {
 
-    int joined ;
-    Button btnJoineRound,btnJoineRound2,btnJoineRound3;
-    RelativeLayout rDivPro1,rDivPro2,rDivPro3,rDivPro4;
-    LinearLayout shadowalert,shadowalert2;
+    int joined;
+    Button btnJoineRound, btnJoineRound2, btnJoineRound3;
+    RelativeLayout rDivPro1, rDivPro2, rDivPro3, rDivPro4;
+    LinearLayout shadowalert, shadowalert2;
     TextView txtReadMore;
+
+    private BottomSheetDialog mBottomSheetDialog;
+
+    private PointF staringPoint = new PointF();
+    private PointF pointerPoint = new PointF();
+    private GestureDetector gestureDetector;
+    private int screenWidth;
+    private int screenHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hale);
 
-        if (savedInstanceState != null){
-           joined = savedInstanceState.getInt("Joined");
+        screenDimensions();
+
+        initCardsIcon();
+
+        initBottomSheet();
+
+        if (savedInstanceState != null) {
+            joined = savedInstanceState.getInt("Joined");
         }
         setBtnTypeCast();
         setupLoginButton();
-        if (joined == 0){
+        if (joined == 0) {
 
             rDivPro1.setVisibility(View.VISIBLE);
             rDivPro2.setVisibility(View.VISIBLE);
@@ -38,7 +55,7 @@ public class HaleActivity extends AppCompatActivity {
             btnJoineRound.setVisibility(View.VISIBLE);
             shadowalert.setVisibility(View.GONE);
             shadowalert.setVisibility(View.GONE);
-        }else if(joined == 1){
+        } else if (joined == 1) {
             rDivPro1.setVisibility(View.VISIBLE);
             rDivPro2.setVisibility(View.VISIBLE);
             shadowalert2.setVisibility(View.GONE);
@@ -47,18 +64,9 @@ public class HaleActivity extends AppCompatActivity {
             rDivPro4.setVisibility(View.VISIBLE);
         }
 
-        //open round updates activity
-        findViewById(R.id.hales_open_round_updates).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HaleActivity.this, RoundUpdatesActivity.class));
-            }
-        });
-
     }
 
     public void setBtnTypeCast() {
-
         btnJoineRound = findViewById(R.id.btnJoineRound);
         btnJoineRound2 = findViewById(R.id.btnJoineRound2);
         btnJoineRound3 = findViewById(R.id.btnJoineRound3);
@@ -73,9 +81,6 @@ public class HaleActivity extends AppCompatActivity {
     }
 
     private void setupLoginButton() {
-
-
-
         btnJoineRound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,45 +125,154 @@ public class HaleActivity extends AppCompatActivity {
         txtReadMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HaleActivity.this,ProductDetailsActivity.class));
+                startActivity(new Intent(HaleActivity.this, ProductDetailsActivity.class));
             }
         });
     }
 
     @Override
     public void onBackPressed() {
+        if (joined == 0) {
 
-        if (joined == 0){
+            rDivPro1.setVisibility(View.VISIBLE);
+            rDivPro2.setVisibility(View.VISIBLE);
+            rDivPro3.setVisibility(View.GONE);
+            btnJoineRound.setVisibility(View.VISIBLE);
+            shadowalert.setVisibility(View.GONE);
+            shadowalert.setVisibility(View.GONE);
+            super.onBackPressed();
 
-              rDivPro1.setVisibility(View.VISIBLE);
-              rDivPro2.setVisibility(View.VISIBLE);
-              rDivPro3.setVisibility(View.GONE);
-              btnJoineRound.setVisibility(View.VISIBLE);
-              shadowalert.setVisibility(View.GONE);
-              shadowalert.setVisibility(View.GONE);
-              super.onBackPressed();
-
-        }else if(joined == 1){
-                rDivPro1.setVisibility(View.VISIBLE);
-                rDivPro2.setVisibility(View.VISIBLE);
-                shadowalert2.setVisibility(View.GONE);
-                rDivPro3.setVisibility(View.GONE);
-                btnJoineRound.setVisibility(View.GONE);
-                rDivPro4.setVisibility(View.VISIBLE);
-                super.onBackPressed();
+        } else if (joined == 1) {
+            rDivPro1.setVisibility(View.VISIBLE);
+            rDivPro2.setVisibility(View.VISIBLE);
+            shadowalert2.setVisibility(View.GONE);
+            rDivPro3.setVisibility(View.GONE);
+            btnJoineRound.setVisibility(View.GONE);
+            rDivPro4.setVisibility(View.VISIBLE);
+            super.onBackPressed();
 
         }
-
-
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("Joined",joined);
+        outState.putInt("Joined", joined);
+    }
+
+    private void initCardsIcon() {
+        RelativeLayout cardsIconContainer = findViewById(R.id.cards_icon_container);
+
+        cardsIconContainer.setOnTouchListener(this);
+
+        gestureDetector = new GestureDetector(this, new SingleTapConfirm());
+        staringPoint = new PointF(cardsIconContainer.getX(), cardsIconContainer.getY());
+    }
+
+    private void initBottomSheet() {
+        mBottomSheetDialog = new BottomSheetDialog(this);
+        View sheetView = getLayoutInflater().inflate(R.layout.bottom_sheet_round_update, null);
+
+        //init bottom sheet views
+        //close bottom sheet
+        sheetView.findViewById(R.id.close_bottom_sheet).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mBottomSheetDialog.isShowing()) {
+                    mBottomSheetDialog.dismiss();
+
+                } else {
+                    mBottomSheetDialog.show();
+                }
+            }
+        });
+
+        mBottomSheetDialog.setContentView(sheetView);
+
+        mBottomSheetDialog.getWindow().findViewById(R.id.design_bottom_sheet)
+                .setBackgroundResource(android.R.color.transparent);
+    }
+
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+
+        // just clicked
+        if (gestureDetector.onTouchEvent(motionEvent)) {
+           cardClicked();
+        }
+
+        // moved
+        switch (motionEvent.getAction()) {
+            case MotionEvent.ACTION_MOVE:
+                // move smoothly
+                view.setX((int) (staringPoint.x + motionEvent.getX() - pointerPoint.x));
+                view.setY((int) (staringPoint.y + motionEvent.getY() - pointerPoint.y));
+                staringPoint.set(view.getX(), view.getY());
+
+                break;
+            case MotionEvent.ACTION_DOWN:
+                // reinitialize points
+                pointerPoint.set(motionEvent.getX(), motionEvent.getY());
+                staringPoint.set(view.getX(), view.getY());
+
+                break;
+            case MotionEvent.ACTION_UP:
+                // checks
+                handleWithScreenBorders(view);
+
+                break;
+            default:
+                break;
+        }
+
+        return true;
+    }
+
+    private void handleWithScreenBorders(View view) {
+        // if out of the left border or in the left half of screen
+        if (view.getX() < 0 || (view.getX() + (view.getWidth() / 2)) < (screenWidth / 2)) {
+            view.setX(0);
+        }
+
+        // if out of the right border or in the right half of screen
+        if ((view.getX() + view.getWidth()) > screenWidth || (view.getX() + (view.getWidth() / 2)) > (screenWidth / 2)) {
+            view.setX(screenWidth - view.getWidth());
+        }
+
+        // if out of the up border
+        if (view.getY() < 0) {
+            view.setY(0);
+        }
+
+        // if out of the bottom border
+        if (view.getY() > (screenHeight - (view.getHeight() / 2))) {
+            view.setY(screenHeight - (view.getHeight()));
+        }
+    }
+
+    private void cardClicked() {
+        // open sheet
+        if (mBottomSheetDialog.isShowing()) {
+            mBottomSheetDialog.dismiss();
+        } else {
+            mBottomSheetDialog.show();
+        }
+    }
+
+    private void screenDimensions() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        screenWidth = size.x;
+        screenHeight = size.y;
+    }
+
+    // help to separate click from touch
+    private class SingleTapConfirm extends GestureDetector.SimpleOnGestureListener {
+
+        @Override
+        public boolean onSingleTapUp(MotionEvent event) {
+            return true;
+        }
     }
 }
-
-
-
-

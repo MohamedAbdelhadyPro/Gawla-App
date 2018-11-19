@@ -25,13 +25,13 @@ public class SplashActivity extends AppCompatActivity {
         btn_kuwait.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SplashActivity.this,onBoardActivity.class));
+                startActivity(new Intent(SplashActivity.this,IntroActivity.class));
             }
         });
         btn_egypt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SplashActivity.this,onBoardActivity.class));
+                startActivity(new Intent(SplashActivity.this,IntroActivity.class));
             }
         });
 

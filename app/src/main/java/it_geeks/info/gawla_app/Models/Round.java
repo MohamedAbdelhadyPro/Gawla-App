@@ -10,6 +10,8 @@ public class Round {
 
     private String ProductPrice;
 
+    private String ProductDescription;
+
     private String StartTime;
 
     private String EndTime;
@@ -19,11 +21,12 @@ public class Round {
     public Round() {
     }
 
-    public Round(String productName, String productImage, String productCategory, String productPrice, String startTime, String endTime, String joinedMembersNumber) {
+    public Round(String productName, String productImage, String productCategory, String productPrice, String productDescription, String startTime, String endTime, String joinedMembersNumber) {
         ProductName = productName;
         ProductImage = productImage;
         ProductCategory = productCategory;
         ProductPrice = productPrice;
+        ProductDescription = productDescription;
         StartTime = startTime;
         EndTime = endTime;
         JoinedMembersNumber = joinedMembersNumber;
@@ -59,6 +62,14 @@ public class Round {
 
     public void setProductPrice(String productPrice) {
         ProductPrice = productPrice;
+    }
+
+    public String getProductDescription() {
+        return ProductDescription;
+    }
+
+    public void setProductDescription(String productDescription) {
+        ProductDescription = productDescription;
     }
 
     public String getStartTime() {

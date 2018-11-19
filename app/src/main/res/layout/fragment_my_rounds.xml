@@ -71,6 +71,24 @@
                     android:layout_marginStart="@dimen/margin_tiny"
                     android:layout_marginEnd="@dimen/margin_tiny" />
 
+                <!-- left arrow button -->
+                <ImageView
+                    android:id="@+id/my_rounds_left_arrow"
+                    android:layout_width="@dimen/margin_xxlarge"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_left" />
+
+                <!-- right arrow button -->
+                <ImageView
+                    android:id="@+id/my_rounds_right_arrow"
+                    android:layout_width="@dimen/margin_xxlarge"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+
                 <!-- empty view -->
                 <LinearLayout
                     android:id="@+id/my_rounds_empty_view"

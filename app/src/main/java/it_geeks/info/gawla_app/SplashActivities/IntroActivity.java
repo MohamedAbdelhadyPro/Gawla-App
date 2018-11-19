@@ -10,11 +10,16 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import it_geeks.info.gawla_app.Adapters.SliderAdapter;
+import it_geeks.info.gawla_app.Common;
 import it_geeks.info.gawla_app.LoginActivities.LoginActivity;
 import it_geeks.info.gawla_app.R;
 
-public class onBoardActivity extends AppCompatActivity {
+import static it_geeks.info.gawla_app.Common.Instance;
+
+public class IntroActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private LinearLayout mDotLayout;
@@ -30,14 +35,15 @@ public class onBoardActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //--------------------------------------------//
-        setContentView(R.layout.activity_onboard);
+        setContentView(R.layout.activity_intro);
 
         txtback = findViewById(R.id.txt_back);
         txtnext = findViewById(R.id.txt_next);
         mViewPager = findViewById(R.id.slideViewPager);
         mDotLayout = findViewById(R.id.dots);
-        SliderAdapter sliderAdapter = new SliderAdapter(onBoardActivity.this);
+        SliderAdapter sliderAdapter = new SliderAdapter(IntroActivity.this);
         mViewPager.setAdapter(sliderAdapter);
+
 
         addDots(0);
 
@@ -74,7 +80,7 @@ public class onBoardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (mCurrentPage >= 2){
-                startActivity(new Intent(onBoardActivity.this,LoginActivity.class));
+                startActivity(new Intent(IntroActivity.this,LoginActivity.class));
                 finish();
             }
                 mViewPager.setCurrentItem(mCurrentPage + 1);
@@ -95,7 +101,7 @@ public class onBoardActivity extends AppCompatActivity {
         for (int i = 0; i < mDots.length; i++) {
             mDots[i] = new TextView(this);
             mDots[i].setText(Html.fromHtml("&#8226"));
-            mDots[i].setTextSize(50);
+            mDots[i].setTextSize(25);
             mDots[i].setTextColor(getResources().getColor(R.color.dots));
             mDotLayout.addView(mDots[i]);
         }

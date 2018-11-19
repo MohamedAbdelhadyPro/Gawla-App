@@ -60,22 +60,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_rounded_corners_blue_180"
-                    android:gravity="center">
+                    android:gravity="center_vertical"
+                    android:layoutDirection="ltr">
 
                     <ImageView
                         android:layout_width="@dimen/image_width_hales_fragment"
                         android:layout_height="match_parent"
-                        android:layout_gravity="left"
                         android:scaleType="fitXY"
                         android:src="@drawable/flodillus" />
 
                     <!-- texts -->
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right|center_vertical"
                         android:layout_margin="@dimen/margin_small"
-                        android:layout_weight="1"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -128,10 +126,8 @@
 
                 <!-- btn see all -->
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
                     android:text="@string/see_all"
                     android:textColor="@color/midBlue"
                     android:textSize="@dimen/text_size_large" />
@@ -147,13 +143,29 @@
                 android:layout_marginEnd="@dimen/margin_tiny" />
 
             <!-- winners news header -->
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_xlarge"
-                android:gravity="start"
-                android:text="@string/winners_of_hale_news"
-                android:textSize="@dimen/text_size_large" />
+                android:layout_margin="@dimen/margin_xlarge">
+
+                <!-- header -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/winners_of_hale_news"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!-- btn see all -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_all"
+                    android:textColor="@color/midBlue"
+                    android:textSize="@dimen/text_size_large" />
+
+            </LinearLayout>
 
             <!-- winners news recycler -->
             <android.support.v7.widget.RecyclerView
@@ -162,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_tiny"
                 android:layout_marginEnd="@dimen/margin_tiny"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
     </ScrollView>

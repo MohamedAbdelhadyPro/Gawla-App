@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/paleGrey"
-    tools:context=".NavigationFragments.HalesFragment">
+    tools:context=".NavigationFragments.MenuFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:src="@drawable/ic_arrow_left" />
 
             </RelativeLayout>
 
@@ -137,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:src="@drawable/ic_arrow_left" />
 
             </RelativeLayout>
 
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:src="@drawable/ic_arrow_left" />
 
             </RelativeLayout>
 
@@ -220,7 +220,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:src="@drawable/ic_arrow_left" />
 
             </RelativeLayout>
 
@@ -264,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:src="@drawable/ic_arrow_left" />
 
             </RelativeLayout>
 
@@ -273,6 +273,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/paleGrey" />
+
+            <!-- top border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/paleGrey" />
+
+            <!-- 6th option -->
+            <RelativeLayout
+                android:id="@+id/menu_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_medium">
+
+                <!-- label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/card_icon_1st"
+                    android:text="@string/settings"
+                    android:textColor="@color/darkSkyBlue"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!-- icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_left" />
+
+            </RelativeLayout>
+
+            <!-- bottom border -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/paleGrey"
+                android:layout_marginBottom="@dimen/margin_large"/>
 
         </LinearLayout>
     </ScrollView>
