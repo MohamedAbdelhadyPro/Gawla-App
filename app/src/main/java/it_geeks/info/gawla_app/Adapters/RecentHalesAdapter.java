@@ -14,7 +14,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 import it_geeks.info.gawla_app.HaleActivity;
 import it_geeks.info.gawla_app.Models.Round;
 import it_geeks.info.gawla_app.R;
@@ -47,6 +46,7 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
         viewHolder.tvProductName.setText(round.getProductName());
         viewHolder.tvProductCategory.setText(round.getProductCategory());
         viewHolder.tvProductPrice.setText(round.getProductPrice());
+        viewHolder.tvProductDescription.setText(round.getProductDescription());
         viewHolder.tvStartTime.setText(round.getStartTime());
         viewHolder.tvEndTime.setText(round.getEndTime());
         viewHolder.tvMembersNumber.setText(round.getJoinedMembersNumber());
@@ -66,7 +66,7 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvProductName, tvProductCategory, tvProductPrice, tvStartTime, tvEndTime, tvMembersNumber, btnJoinRound;
+        TextView tvProductName, tvProductCategory, tvProductPrice, tvProductDescription, tvStartTime, tvEndTime, tvMembersNumber, btnJoinRound;
         ImageView imgProductImage;
 
         private ViewHolder(@NonNull View itemView) {
@@ -76,6 +76,7 @@ public class RecentHalesAdapter extends RecyclerView.Adapter<RecentHalesAdapter.
             tvProductName = itemView.findViewById(R.id.round_product_name);
             tvProductCategory = itemView.findViewById(R.id.round_product_category);
             tvProductPrice = itemView.findViewById(R.id.round_product_price);
+            tvProductDescription = itemView.findViewById(R.id.round_product_description);
             tvStartTime = itemView.findViewById(R.id.round_start_time);
             tvEndTime = itemView.findViewById(R.id.round_end_time);
             tvMembersNumber = itemView.findViewById(R.id.round_members_number);

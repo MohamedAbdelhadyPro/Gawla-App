@@ -1,4 +1,4 @@
-package it_geeks.info.gawla_app.SplashActivities;
+package it_geeks.info.gawla_app.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import it_geeks.info.gawla_app.LoginActivities.LoginActivity;
 import it_geeks.info.gawla_app.R;
+import it_geeks.info.gawla_app.SplashActivities.IntroActivity;
 
 public class SliderAdapter extends PagerAdapter {
     Context context;
@@ -20,7 +21,7 @@ public class SliderAdapter extends PagerAdapter {
     public int[] slide_Images ;
     String[] slide_headings , slide_descs;
     TextView txt_Splat_Skip;
-    onBoardActivity onboardActivity = new onBoardActivity();
+    IntroActivity onboardActivity = new IntroActivity();
 
     public SliderAdapter(Context context) {
         this.context = context;

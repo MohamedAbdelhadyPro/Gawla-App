@@ -66,13 +66,12 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_small">
+                        android:layout_margin="@dimen/margin_tiny">
 
                         <!-- just a placeholder for icon -->
                         <ImageView
                             android:layout_width="@dimen/image_account"
                             android:layout_height="@dimen/image_account"
-                            android:layout_margin="@dimen/margin_tiny"
                             android:background="@drawable/bg_circle_bordered_pale_grey2"
                             android:scaleType="centerInside"
                             android:src="@drawable/ic_user" />
@@ -81,7 +80,6 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="@dimen/image_account"
                             android:layout_height="@dimen/image_account"
-                            android:layout_margin="@dimen/margin_tiny"
                             app:civ_border_color="@color/blueyGrey"
                             app:civ_border_width="1dp" />
 
@@ -149,7 +147,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
                         android:layout_margin="@dimen/margin_medium"
-                        android:src="@drawable/ic_arrow_right" />
+                        android:src="@drawable/ic_arrow_left" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -194,7 +192,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
                         android:layout_margin="@dimen/margin_medium"
-                        android:src="@drawable/ic_arrow_right" />
+                        android:src="@drawable/ic_arrow_left" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -239,7 +237,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
                         android:layout_margin="@dimen/margin_medium"
-                        android:src="@drawable/ic_arrow_right" />
+                        android:src="@drawable/ic_arrow_left" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>

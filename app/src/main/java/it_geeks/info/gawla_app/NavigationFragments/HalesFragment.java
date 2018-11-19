@@ -28,8 +28,7 @@ public class HalesFragment extends Fragment {
     private List<WinnerNews> winnerNewsList = new ArrayList<>();
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hales, container, false);
 
         getData();
@@ -48,6 +47,7 @@ public class HalesFragment extends Fragment {
                     , "image" + i
                     , "Electronics"
                     , i + "0000 L.E"
+                    , "this should be description"
                     , "14 hr 40 min"
                     , "8 hr 40 min"
                     , "2" + i + " member joined");

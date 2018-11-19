@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/paleGrey"
-    tools:context=".NavigationFragments.MyRoundsFragment">
+    tools:context=".SettingsActivity">
 
     <ScrollView
         android:id="@+id/my_rounds_scroll_view"
@@ -50,59 +50,21 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_small"
                 android:gravity="center"
-                android:text="@string/joined_hales"
+                android:text="@string/settings"
                 android:textAllCaps="true"
                 android:textColor="@color/midBlue"
                 android:textSize="@dimen/text_size_large"
                 android:textStyle="bold" />
 
-            <!-- rounds & empty view container -->
-            <RelativeLayout
+            <!-- language -->
+            <Spinner
+                android:id="@+id/settings_lang_spinner"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <!-- rounds -->
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/rounds_pager"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/my_rounds_view_pager_height"
-                    android:layout_centerInParent="true"
-                    android:layout_marginStart="@dimen/margin_tiny"
-                    android:layout_marginEnd="@dimen/margin_tiny" />
-
-                <!-- empty view -->
-                <LinearLayout
-                    android:id="@+id/my_rounds_empty_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/my_rounds_view_pager_height"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:visibility="invisible">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_marginStart="@dimen/margin_xxlarge"
-                        android:layout_marginEnd="@dimen/margin_xxlarge"
-                        android:layout_weight="1"
-                        android:src="@drawable/empty_view_my_rounds" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_medium"
-                        android:gravity="center"
-                        android:text="@string/joined_hales_empty_hint"
-                        android:textColor="@color/blueGrey"
-                        android:textSize="@dimen/text_size_medium" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
+                android:layout_margin="@dimen/margin_small"
+                android:layout_height="wrap_content"
+                android:entries="@array/languagesArray" />
 
         </LinearLayout>
     </ScrollView>
 
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>
